@@ -1127,6 +1127,7 @@ left: 52px ;
     border-style: solid;
     border-radius: 20px;
     color: black;
+    background: none;
 }
 
 .inputapellido input{
@@ -1136,6 +1137,7 @@ left: 52px ;
     border-style: solid;
     border-radius: 20px;
     color: black;
+    background: none;
 }
 
 .inputemail input {
@@ -1145,6 +1147,7 @@ left: 52px ;
     border-style: solid;
     border-radius: 20px;
     color: black;
+    background: none;
 }
 
 .inputaffair input {
@@ -1154,15 +1157,17 @@ left: 52px ;
     border-style: solid;
     border-radius: 20px;
     color: black;
+    background: none;
 }
 
 .textareacomments textarea {
     width: 200px;
-    height: 20px;
+    height: 35px;
     border-width: 3px;
     border-style: solid;
     border-radius: 20px;
     color: black;
+    background: none;
 }
 
 .botonsubmit input {
