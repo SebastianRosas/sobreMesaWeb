@@ -30,7 +30,8 @@ textarea {
     font-size: 20px;
 }
 
-@media only screen and (min-width: 720px ) {
+
+@media screen and (min-width: 1080px ) {
 
 
 
@@ -604,11 +605,11 @@ left: 538px ;
 /* MOBILE VERSION */
 
 
-/*@media only screen and (min-width: 320px ) {
+@media (max-width: 640px)  {
 
     /* Home Mobile */
 
-/*#logonavbar a {
+#logonavbar a {
     display: none;
 }
 
@@ -616,7 +617,7 @@ left: 538px ;
     
     flex-wrap: nowrap;
     display: grid;
-    height: 320px;
+    height: 640px;
     display: inline-block;
     width: 100%;
 
@@ -658,71 +659,71 @@ display: none;
 
 #SobremesaLogo img {
     align-items: center;
-    width: 1238px ;
+    width: 300px ;
     position: relative;
-      top: 160px ;
-      right: 400px ;
-      bottom: 342px ;
-      left: 282px;
+      top: 289px ;
+      right: 28.5px ;
+      bottom: 140px ;
+      left: 28.5px;
 }
 
 #PlatoConQueso img {
-    width: 176px;
+    width: 79px;
     position: absolute;
-    top: 200px ;
-    right: 1574px ;
-    bottom: 380px ;
-    left: 170px;
+    top: 183px ;
+    right: 282px ;
+    bottom: 291px ;
+    left: 29px;
 
 }
 
 #PlatoTenedorAmrillo img {
-    width: 165px ;
+    width: 70px ;
     position: absolute;
-    top: 600px ;
-    right: 167px ;
-    bottom: 195px ;
-    left: 1548px;
+    top: 486px ;
+    right: 36px ;
+    bottom: 0px ;
+    left: 260px;
 
 }
 
 #Roto img {
-    width: 89px;
+    width: 44px;
     position: absolute;
-    top: 680px ;
-    right: 1406px ;
-    bottom: 120px ;
-    left: 235px;
+    top: 450px ;
+    right: 302px ;
+    bottom: 0px ;
+    left: 44px;
 
 }
 
 #Copa img {
-    width: 241px;
+    width: 115px;
     position: absolute;
-    top: 630px ;
-    right: 700px ;
-    bottom: 200px ;
-    left: 750px;
+    top: 414px ;
+    right: 122px ;
+    bottom: 0px ;
+    left: 122px;
 
 }
 
 #Cuchillo img {
-    width: 70px;
+    width: 35px;
     position: absolute;
-    top: 160px;
-    right:  152px;
-    bottom:  482px;
-    left: 1605px;
+    top: 210px;
+    right: 36px;
+    bottom: 0px;
+    left: 295px;
 
 }
 
 #Tenedor img{
-    width: 155px;
+    width: 76px;
     position: absolute;
-    top: 140px;
-    right:  152px;
-    bottom:  482px;
-    left: 1480px;
+    top: 206px;
+    right: 47px;
+    bottom: 0px;
+    left: 230px;
 }
 
 #logonavbar {
@@ -735,8 +736,8 @@ display: none;
 
 /* About */
 
-/*.AboutFondo {
-    height: 320px;
+.AboutFondo {
+    height: 640px;
     display: inline-block;
     width: 100%;
     background-image: url("../images/About/Fondoaboutmobile.png");
@@ -744,350 +745,343 @@ display: none;
 }
 
 .tituloabout h1 {
-    font-size: 110px ;
+    font-size: 50px;
     position: absolute;
-    top: 1350px ;
-    right: 1027px;
-    bottom: 645px;
-    left: 267px;
+    top: 700px;
+    right: auto;
+    bottom: 57px;
+    left: 50px;
 }
 
 .aboutdescription article p {
-    font-size: 35px;
+    font-size: 17px;
     justify-content: space-between;
     position: absolute;
-    top: 1520px;
-    right: 1078px;
-    bottom: 357px;
-    left: 319px;
-}
+    top: 1100px;
+    right: auto;
+    bottom: 57px;
+    left: 40px;
+    }
 
 
 #CartelitoAbout img {
-    width: 582px ;
+    width: 303px;
     position: absolute;
-    top: 1400px;
-    right: 110px ;
+    top: 860px;
+    right: auto;
     bottom: 431px;
-    left: 1228px ;
+    left: 30px;
 }
 
 /* The Party */
 
-/*#thepartypage {
-    height: 320px;
+#thepartypage {
+    height: 640px;
     display: inline-block;
     width: 100%;
 }
 
 
 .TituloTheParty {
-font-size: 100px;
-position: absolute;
-top: 2170px ;
-right:854px;
-bottom: 1067px ;
-left: 757px;
+    font-size: 50px;
+    position: absolute;
+    top: 1300px;
+    right: auto;
+    bottom: 57px;
+    left: 100px;
 }
 
 .copatheparty {
-    width: 1010px;
+    width: 380px;
     position: absolute;
-    top: 1920px ;
-    right: 1293px;
-    bottom: auto ;
-    left: auto;
-}
+    top: 1400px;
+    right: 0px;
+    bottom: auto;
+    left: -135px;
+}   
 
 .platosparty {
-    width: 767px ;
+    width: 310px;
     position: absolute;
-    top: 2370px ;
-    right: 641px;
-    bottom: 904px;
-    left: 512px;
+    top: 1400px;
+    right: 33px;
+    bottom: 671px;
+    left: 25px;
 } 
 
 .cuchilloparty {
-    width: 70px;
-    position: absolute;
-    top: 2350px ;
-    right: 132px;
-    bottom: 901px;
-    left: 1667px;
+    display: none;
 }
 
 .tenedorparty {
-    width: 160px;
-    position: absolute;
-    top: 2340px;
-    right: 190px;
-    bottom: 933px ;
-    left: 1537px;
+   display: none;
 }
 
 .platoesquinaparty {
-    width: 439px;
+    width: 260px;
     position: relative;
-    top: 720px;
-    right: auto ;
-    bottom: auto ;
-    left: 1450px;
+    top: 500px;
+    right: auto;
+    bottom: auto;
+    left: 90px;
 }
 
 .titulofotosparty {
-    font-size: 30px;
+    font-size: 17px;
     position: absolute;
-    top: 2655px;
-    right: 1758px ;
-    bottom: 773px;
-    left: 110px ;
+    top: 1455px;
+    right: auto;
+    bottom: 57px;
+    left: 90px;
 }
 
 #fotosparty img {
-    width: 150px;
+    width: 70px;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
     position: relative;
-    top: 100px ;
-    right: 1218px ;
-    bottom: 356px ;
-    left: 92px;
-    border-radius: 20px;
+    top: -70px;
+    right: auto;
+    bottom: auto;
+    left: 70px;
+    border-radius: 15px;
 }
 
 .tituloflyersparty { 
-    font-size: 30px;
+    font-size: 17px;
     position: absolute;
-    top: 2920px ;
-    right: 300px ;
-    bottom: 150px ;
-    left: 1150px;    
+    top: 1857px;
+    right: auto;
+    bottom: 57px;
+    left: 17px
 }
 
-#flyersparty img { /*resolver que se sube el top */
-    width: 150px;
+#flyersparty img {
+    width: 70px;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
     position: relative;
-    top: auto;
-    right: 188px;
-    bottom: 356px ;
-    left: 1122px ;
-    border-radius: 20px;
+    top: -50px;
+    right: auto;
+    bottom: auto;
+    left: 0px;
+    border-radius: 15px;
 
 }
 
 /* Guests */
 
-/*#guestspage {
-    height: 320px;
+#guestspage {
+    height: 640px;
     display: inline-block;
     width: 100%;
 }
 #gueststitulo {
     z-index: 2;
-    font-size: 100px ;
+    font-size: 40px;
     position: absolute;
-    top:  3450px ;
-    right: 730px ;
-    bottom: 757px ;
-    left: 800px ;
+    top: 1965px;
+    right: auto;
+    bottom: 57px;
+    left: 17px;
 }
 
 .Botella img {
     z-index: 1;
-    width: 1050px;
+    width: 350px;
     position: absolute;
-    top: 3190px ;
-    right: 653px;
-    bottom: 0px ;
+    top: 2208px;
+    right: 0px;
+    bottom: 0px;
     left: 0px;
 }
 
 .ethel {
-    width: 160px ;
+    width: 60px;
     position: absolute;
-    top: 3460px;
-    right: 408px;
-    bottom: 788px;
-    left: 1228px;
+    top: 2100px;
+    right: auto;
+    bottom: 57px;
+    left: 17px;
 }
 
 .georgiooniani {
-    width: 154px;
+    width: 60px;
     position: absolute;
-    top: 3620px;
-    right: 124px;
-    bottom: 608px;
-    left: 1642px ;
+    top: 2050px;
+    right: auto;
+    bottom: 57px;
+    left: 100px;
 }
 
 .hugie {
-    width: 166px;
+    width: 70px;
     position: absolute;
-    top: 4150px;
-    right: 342px;
-    bottom: 71px;
-    left: 1288px;
+    top: 2300px;
+    right: auto;
+    bottom: 57px;
+    left: 20px;
+}
+
 }
 
 .mayell {
-    width: 143px;
-    position: absolute ;
-    top: 3630px ;
-    right: 243px;
-    bottom: 523px;
-    left: 1382px;
+    width: 62px;
+    position: absolute;
+    top: 2150px;
+    right: auto;
+    bottom: 57px;
+    left: 100px;
 }
 
 .mrmurray {
-    width: 163px ;
+    width: 60px;
     position: absolute;
-    top: 4010px;
-    right: 588px ;
-    bottom: 91px ;
-    left: 1020px;
+    top: 2090px;
+    right: auto;
+    bottom: 57px;
+    left: 175px;
 }
 
 .oswaldo {
-    width: 206px;
+    width: 70px;
     position: absolute;
-    top: 3900px;
-    right: 124px ;
-    bottom: 238px ;
-    left: 1590px ;
+    top: 2060px;
+    right: auto;
+    bottom: 57px;
+    left: 230px;
 }
 
 .quest {
-    width: 113px ;
+    width: 60px;
     position: absolute;
-    top: 3950px;
-    right: 327px;
-    bottom: 285px;
-    left: 1300px ;
+    top: 2165px;
+    right: auto;
+    bottom: 57px;
+    left: 280px;
 }
 
 .sugarfree {
-    width: 119px;
+    width: 45px;
     position: absolute;
-    top: 3770px;
-    right: 485px;
-    bottom: 367px;
-    left: 1130px;
+    top: 2110px;
+    right: auto;
+    bottom: 57px;
+    left: 290px;
 }
 
 .timkern {
-    width: 106px ;
+    width: 50px;
     position: absolute;
-    top: 3490px;
-    right: 170px;
-    bottom: 748px;
-    left: 1520px;
+    top: 2220px;
+    right: auto;
+    bottom: 57px;
+    left: 20px;
 }
 
 .tzena {
-    width: 101px ;
+    width: 60px;
     position: absolute;
-    top: 4100px;
-    right: 209px;
-    bottom: 90px ;
-    left: 1600px;
+    top: 2240px;
+    right: auto;
+    bottom: 57px;
+    left: 110px;
+    transform: rotate(-20deg);
 } 
 
 .cuchilloguests img {
     z-index: 3;
-    width: 54px;
+    width: 29px;
     position: absolute;
-    top: 3700px;
-    right: 966px ;
-    bottom: 415px;
-    left: 710px;
+    top: 2380px;
+    right: 0px;
+    bottom: 0px;
+    left: 238px;
 }
 
-.tenedorguests {
+.tenedorguests img {
     z-index: 4;
-    width: 60px;
+    width: 100px;
     position: absolute;
-    top: 3880px;
-    right: 979px;
-    bottom: 290px;
-    left: 540px;
+    top: 2460px;
+    right: 0px;
+    bottom: 0px;
+    left: 150px;
 }
 
 .plato2guests img{
-    width: 130px;
+    width: 50px;
     position: absolute;
-    top: 3800px ;
-    right: 262px ;
-    bottom: 389px ;
-    left: 1400px ;
+    top: 2165px;
+    right: auto;
+    bottom: 57px;
+    left: 190px;
 }
 
 .quesoguests img {
-    width: 156px;
+    width: 48px;
     position: absolute;
-    top: 3560px;
-    right: 513px ;
-    left: 1100px ;
-    bottom: 546px;
+    top: 2150px;
+    right: auto;
+    bottom: 57px;
+    left: 30px;
 }
 /* Contact */
 
-/*.fondofomulario {
-    width: 320px;
-    height: 1080px;
+.fondofomulario {
+    height: 640px;
     display: inline-block;
     width: 100%;
-    background-image: url("../images/Contact/FondoContacto1920x1080.png");
+    background-image: url("../images/Contact/fondomobilecontact.png");
 background-size: cover;
 }
 
 .tituloformulario h1 {
-    font-size: 100px;
-  position: absolute;
-  top: 4450px;
-  right: 758px;
-  bottom: 806px;
-  left: 758px;
+    font-size: 50px;
+    position: absolute;
+    top: 2570px;
+    right: auto;
+    bottom: 57px;
+    left: 85px;
 }
 
 .quesocontact img {
-    width: 192px ;
+    width: 100px;
     position: absolute;
-    top: 4600px;
-    right: 1466px;
-    bottom: 716px;
-    left: 262px;
+    top: 2990px;
+    right: auto;
+    bottom: 57px;
+    left: -69px;
 }
 
 .sobremesalogocontact img {
-    width: 317px;
+    width: 100px;
     position: absolute;
-    top: 4850px ;
-    right: 140px;
-    bottom: 494px;
-    left: 1463px ;
+    top: 2670px;
+    right: auto;
+    bottom: 57px;
+    left: 250px;
+    transform: rotate(50deg);
 }
 
 .instagramlogofooter img{
-    width: 40px;
+    width: 25px;
     position: absolute;
-    top: 5405px ;
-    right: 360px;
-    bottom: 45px;
-    left: 1520px ;
+    top: 3182px;
+    right: auto;
+    bottom: 57px;
+    left: 270px;
 }
 
 .facebooklogofooter img {
-    width: 47px ;
+    width: 27px;
     position: absolute;
-    top: 5400px;
-    right: 297px;
-    bottom: 39px;
-    left: 1572px;
+    top: 3180px;
+    right: auto;
+    bottom: 57px;
+    left: 304px;
 }
 
 #formulariocontact {
@@ -1095,15 +1089,15 @@ background-size: cover;
 flex-direction: column;
 align-items: center;
 position: absolute;
-top: 4700px ;
-right: 538px ;
-bottom: 190px;
-left: 538px ;
+top: 2680px ;
+right: 68px ;
+bottom: 128px;
+left: 52px ;
 }
 
 .inputname input{
-    width: 500px;
-    height: 25px;
+    width: 200px;
+    height: 20px;
     border-width: 3px;
     border-style: solid;
     border-radius: 20px;
@@ -1111,8 +1105,8 @@ left: 538px ;
 }
 
 .inputapellido input{
-    width: 500px;
-    height: 25px;
+    width: 200px;
+    height: 20px;
     border-width: 3px;
     border-style: solid;
     border-radius: 20px;
@@ -1120,8 +1114,8 @@ left: 538px ;
 }
 
 .inputemail input {
-    width: 500px;
-    height: 25px;
+    width: 200px;
+    height: 20px;
     border-width: 3px;
     border-style: solid;
     border-radius: 20px;
@@ -1129,8 +1123,8 @@ left: 538px ;
 }
 
 .inputaffair input {
-    width: 500px;
-    height: 25px;
+    width: 200px;
+    height: 20px;
     border-width: 3px;
     border-style: solid;
     border-radius: 20px;
@@ -1138,8 +1132,8 @@ left: 538px ;
 }
 
 .textareacomments textarea {
-    width: 500px;
-    height: 130px;
+    width: 200px;
+    height: 20px;
     border-width: 3px;
     border-style: solid;
     border-radius: 20px;
@@ -1156,5 +1150,4 @@ left: 538px ;
     background: none;
     }
 
-
-
+}
