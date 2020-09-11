@@ -100,6 +100,10 @@ text-decoration: none;
     text-decoration: none;
 }
 
+#swipeuplogo img {
+    display: none;
+}
+
 #botonmenudesplegable img {
     display: none;
 }
@@ -670,6 +674,14 @@ display: none;
     left: 270px;
 }
 
+#swipeuplogo img {
+    width: 35px;
+    position: absolute;
+    top: 560px;
+    right: 0px;
+    bottom: 291px;
+    left: 165px;
+}
 
 #SobremesaLogo img {
     align-items: center;
