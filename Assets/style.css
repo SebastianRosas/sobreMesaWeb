@@ -100,6 +100,10 @@ text-decoration: none;
     text-decoration: none;
 }
 
+#botonmenudesplegable img {
+    display: none;
+}
+
 #SobremesaLogo img {
     align-items: center;
   width: 1238px ;
@@ -656,6 +660,16 @@ display: none;
 .ContactMenu {
     display: none;
 }
+
+#botonmenudesplegable img {
+    width: 70px;
+    position: absolute;
+    top: 20px;
+    right: 282px;
+    bottom: 291px;
+    left: 270px;
+}
+
 
 #SobremesaLogo img {
     align-items: center;
