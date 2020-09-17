@@ -17,12 +17,10 @@ p {
 
 label {
     font-family: "DK Lemon Yellow Sun" ;
-    font-size: 30px;
 }
 
 input {
     font-family: "DK Lemon Yellow Sun" ;
-    font-size: 20px;
 }
 
 textarea {
@@ -112,36 +110,36 @@ text-decoration: none;
     align-items: center;
   width: 1238px ;
   position: relative;
-    top: 160px ;
-    right: 400px ;
-    bottom: 342px ;
-    left: 282px;
+    top: 250px;
+    right: 400px;
+    bottom: 342px;
+    left: 330px;
 }
 
 #PlatoConQueso img {
     width: 176px;
-    position: absolute;
-    top: 200px ;
-    right: 1574px ;
-    bottom: 380px ;
+    position: relative;
+    top: -290px;
+    right: 1574px;
+    bottom: 380px;
     left: 170px;
 
 }
 
 #PlatoTenedorAmrillo img {
-    width: 165px ;
-    position: absolute;
-    top: 600px ;
-    right: 167px ;
-    bottom: 195px ;
-    left: 1548px;
+    width: 165px;
+    position: relative;
+    top: 0px;
+    right: 167px;
+    bottom: 195px;
+    left: 1600px;
 
 }
 
 #Roto img {
     width: 89px;
-    position: absolute;
-    top: 680px ;
+    position: relative;
+    top: -100px ;
     right: 1406px ;
     bottom: 120px ;
     left: 235px;
@@ -150,30 +148,30 @@ text-decoration: none;
 
 #Copa img {
     width: 241px;
-    position: absolute;
-    top: 630px ;
-    right: 700px ;
-    bottom: 200px ;
+    position: relative;
+    top: -200px;
+    right: 700px;
+    bottom: 200px;
     left: 750px;
 
 }
 
 #Cuchillo img {
     width: 70px;
-    position: absolute;
-    top: 160px;
-    right:  152px;
-    bottom:  482px;
+    position: relative;
+    top: -800px;
+    right: 152px;
+    bottom: 482px;
     left: 1605px;
 
 }
 
 #Tenedor img{
     width: 155px;
-    position: absolute;
-    top: 140px;
-    right:  152px;
-    bottom:  482px;
+    position: relative;
+    top: -960px;
+    right: 152px;
+    bottom: 482px;
     left: 1480px;
 }
 
@@ -184,6 +182,156 @@ text-decoration: none;
 #opcionesmenunavbar {
     padding: 0px 200px;
 }
+
+.shakeplatoconqueso:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  .shakeplatotenedoramarillo:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  .shakecopa:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  .shakeroto:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  .shaketenedor:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  .shakecuchillo:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
 
 /* About */
 
@@ -196,19 +344,19 @@ text-decoration: none;
 }
 
 .tituloabout h1 {
-    font-size: 110px ;
+    font-size: 110px;
     position: absolute;
-    top: 1350px ;
+    top: 1490px;
     right: 1027px;
     bottom: 645px;
-    left: 267px;
+    left: 267px
 }
 
 .aboutdescription article p {
     font-size: 35px;
     justify-content: space-between;
     position: absolute;
-    top: 1520px;
+    top: 1660px;
     right: 1078px;
     bottom: 357px;
     left: 319px;
@@ -216,13 +364,37 @@ text-decoration: none;
 
 
 #CartelitoAbout img {
-    width: 582px ;
-    position: absolute;
-    top: 1400px;
-    right: 110px ;
+    width: 582px;
+    position: relative;
+    top: 340px;
+    right: 110px;
     bottom: 431px;
-    left: 1228px ;
+    left: 1228px;
 }
+
+.cartelitomovimiento{
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
 
 /* The Party */
 
@@ -234,27 +406,27 @@ text-decoration: none;
 
 
 .TituloTheParty {
-font-size: 100px;
-position: absolute;
-top: 2170px ;
-right:854px;
-bottom: 1067px ;
-left: 757px;
+    font-size: 100px;
+    position: absolute;
+    top: 2360px;
+    right: 854px;
+    bottom: 1067px;
+    left: 757px;
 }
 
 .copatheparty {
     width: 1010px;
     position: absolute;
-    top: 1920px ;
+    top: 2100px;
     right: 1293px;
-    bottom: auto ;
+    bottom: auto;
     left: auto;
 }
 
 .platosparty {
-    width: 767px ;
+    width: 767px;
     position: absolute;
-    top: 2370px ;
+    top: 2570px;
     right: 641px;
     bottom: 904px;
     left: 512px;
@@ -262,8 +434,8 @@ left: 757px;
 
 .cuchilloparty {
     width: 70px;
-    position: absolute;
-    top: 2350px ;
+    position: relative;
+    top: 160px;
     right: 132px;
     bottom: 901px;
     left: 1667px;
@@ -271,29 +443,29 @@ left: 757px;
 
 .tenedorparty {
     width: 160px;
-    position: absolute;
-    top: 2340px;
+    position: relative;
+    top: 30px;
     right: 190px;
-    bottom: 933px ;
+    bottom: 933px;
     left: 1537px;
 }
 
 .platoesquinaparty {
     width: 439px;
     position: relative;
-    top: 720px;
-    right: auto ;
-    bottom: auto ;
+    top: 300px;
+    right: auto;
+    bottom: auto;
     left: 1450px;
 }
 
 .titulofotosparty {
     font-size: 30px;
     position: absolute;
-    top: 2655px;
-    right: 1758px ;
+    top: 2823px;
+    right: 1758px;
     bottom: 773px;
-    left: 110px ;
+    left: 119px;
 }
 
 #fotosparty img {
@@ -302,9 +474,9 @@ left: 757px;
     justify-content: space-between;
     padding: 10px;
     position: relative;
-    top: 100px ;
-    right: 1218px ;
-    bottom: 356px ;
+    top: -200px;
+    right: 1218px;
+    bottom: 356px;
     left: 92px;
     border-radius: 20px;
 }
@@ -312,25 +484,74 @@ left: 757px;
 .tituloflyersparty { 
     font-size: 30px;
     position: absolute;
-    top: 2920px ;
-    right: 300px ;
-    bottom: 150px ;
-    left: 1150px;    
+    top: 3088px;
+    right: 300px;
+    bottom: 150px;
+    left: 1160px;  
 }
 
-#flyersparty img { /*resolver que se sube el top */
+#flyersparty img { 
     width: 150px;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px;
     position: relative;
-    top: auto;
+    top: -628px;
     right: 188px;
-    bottom: 356px ;
-    left: 1122px ;
+    bottom: 356px;
+    left: 1122px;
     border-radius: 20px;
 
 }
+
+#shakecuchilloparty:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  #shaketenedorparty:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
 
 /* Guests */
 
@@ -341,28 +562,28 @@ left: 757px;
 }
 #gueststitulo {
     z-index: 2;
-    font-size: 100px ;
+    font-size: 100px;
     position: absolute;
-    top:  3450px ;
-    right: 730px ;
-    bottom: 757px ;
-    left: 800px ;
+    top: 3872px;
+    right: 730px;
+    bottom: 757px;
+    left: 800px;
 }
 
 .Botella img {
     z-index: 1;
     width: 1050px;
     position: absolute;
-    top: 3190px ;
+    top: 3613px;
     right: 653px;
-    bottom: 0px ;
+    bottom: 0px;
     left: 0px;
 }
 
 .ethel {
-    width: 160px ;
+    width: 160px;
     position: absolute;
-    top: 3460px;
+    top: 3870px;
     right: 408px;
     bottom: 788px;
     left: 1228px;
@@ -371,16 +592,16 @@ left: 757px;
 .georgiooniani {
     width: 154px;
     position: absolute;
-    top: 3620px;
+    top: 4100px;
     right: 124px;
     bottom: 608px;
-    left: 1642px ;
+    left: 1642px;
 }
 
 .hugie {
     width: 166px;
     position: absolute;
-    top: 4150px;
+    top: 4600px;
     right: 342px;
     bottom: 71px;
     left: 1288px;
@@ -388,64 +609,64 @@ left: 757px;
 
 .mayell {
     width: 143px;
-    position: absolute ;
-    top: 3630px ;
+    position: absolute;
+    top: 4020px;
     right: 243px;
     bottom: 523px;
     left: 1382px;
 }
 
 .mrmurray {
-    width: 163px ;
+    width: 163px;
     position: absolute;
-    top: 4010px;
-    right: 588px ;
-    bottom: 91px ;
-    left: 1020px;
+    top: 4460px;
+    right: 588px;
+    bottom: 91px;
+    left: 1000px;
 }
 
 .oswaldo {
     width: 206px;
     position: absolute;
-    top: 3900px;
-    right: 124px ;
-    bottom: 238px ;
-    left: 1590px ;
+    top: 4320px;
+    right: 124px;
+    bottom: 238px;
+    left: 1590px;
 }
 
 .quest {
-    width: 113px ;
+    width: 113px;
     position: absolute;
-    top: 3950px;
+    top: 4420px;
     right: 327px;
     bottom: 285px;
-    left: 1300px ;
+    left: 1300px;
 }
 
 .sugarfree {
     width: 119px;
     position: absolute;
-    top: 3770px;
+    top: 4250px;
     right: 485px;
     bottom: 367px;
     left: 1130px;
 }
 
 .timkern {
-    width: 106px ;
+    width: 106px;
     position: absolute;
-    top: 3490px;
+    top: 3900px;
     right: 170px;
     bottom: 748px;
     left: 1520px;
 }
 
 .tzena {
-    width: 101px ;
+    width: 101px;
     position: absolute;
-    top: 4100px;
+    top: 4520px;
     right: 209px;
-    bottom: 90px ;
+    bottom: 90px;
     left: 1600px;
 } 
 
@@ -453,8 +674,8 @@ left: 757px;
     z-index: 3;
     width: 54px;
     position: absolute;
-    top: 3700px;
-    right: 966px ;
+    top: 4125px;
+    right: 966px;
     bottom: 415px;
     left: 710px;
 }
@@ -463,7 +684,7 @@ left: 757px;
     z-index: 4;
     width: 60px;
     position: absolute;
-    top: 3880px;
+    top: 4320px;
     right: 979px;
     bottom: 290px;
     left: 540px;
@@ -472,44 +693,321 @@ left: 757px;
 .plato2guests img{
     width: 130px;
     position: absolute;
-    top: 3800px ;
-    right: 262px ;
-    bottom: 389px ;
-    left: 1400px ;
+    top: 4220px;
+    right: 262px;
+    bottom: 389px;
+    left: 1400px;
 }
 
 .quesoguests img {
     width: 156px;
     position: absolute;
-    top: 3560px;
-    right: 513px ;
-    left: 1100px ;
+    top: 4020px;
+    right: 513px;
+    left: 1100px;
     bottom: 546px;
 }
+
+#shakeethel:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  #shakegeorgiooniani:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  #shakehugie:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  #shakemayell:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  #shakemrmurray:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  #shakeoswaldo:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+   #shakequest:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  #shakesugarfree:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  #shaketimkern :hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+ #shaketzena:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  
+  #shaketimkern:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  
 /* Contact */
 
-.fondofomulario {
+.contactofondo {
+    display: inline-block;
     width: 1920px;
     height: 1080px;
-    display: inline-block;
     width: 100%;
-    background-image: url("../images/Contact/FondoContacto1920x1080.png");
+    background-image: url("../images/Contact/fondocontact.png");
 background-size: cover;
+
 }
 
 .tituloformulario h1 {
     font-size: 100px;
-  position: absolute;
-  top: 4450px;
-  right: 758px;
-  bottom: 806px;
-  left: 758px;
+    position: absolute;
+    top: 4870px;
+    right: 758px;
+    bottom: 806px;
+    left: 758px
 }
 
 .quesocontact img {
     width: 192px ;
     position: absolute;
-    top: 4600px;
+    top: 5100px;
     right: 1466px;
     bottom: 716px;
     left: 262px;
@@ -518,25 +1016,26 @@ background-size: cover;
 .sobremesalogocontact img {
     width: 317px;
     position: absolute;
-    top: 4850px ;
+    top: 5160px;
     right: 140px;
     bottom: 494px;
-    left: 1463px ;
+    left: 1420px;
 }
+
 
 .instagramlogofooter img{
     width: 40px;
     position: absolute;
-    top: 5405px ;
+    top: 5730px;
     right: 360px;
     bottom: 45px;
-    left: 1520px ;
+    left: 1520px;
 }
 
 .facebooklogofooter img {
-    width: 47px ;
+    width: 43px;
     position: absolute;
-    top: 5400px;
+    top: 5725px;
     right: 297px;
     bottom: 39px;
     left: 1572px;
@@ -547,10 +1046,11 @@ background-size: cover;
 flex-direction: column;
 align-items: center;
 position: absolute;
-top: 4700px ;
+top: 5100px ;
 right: 538px ;
 bottom: 190px;
 left: 538px ;
+line-height: 15px;
 }
 
 .inputname input{
@@ -560,6 +1060,7 @@ left: 538px ;
     border-style: solid;
     border-radius: 20px;
     color: black;
+    font-size: 20px;
 }
 
 .inputapellido input{
@@ -569,6 +1070,7 @@ left: 538px ;
     border-style: solid;
     border-radius: 20px;
     color: black;
+    font-size: 20px;
 }
 
 .inputemail input {
@@ -578,6 +1080,7 @@ left: 538px ;
     border-style: solid;
     border-radius: 20px;
     color: black;
+    font-size: 20px;
 }
 
 .inputaffair input {
@@ -587,6 +1090,7 @@ left: 538px ;
     border-style: solid;
     border-radius: 20px;
     color: black;
+    font-size: 20px;
 }
 
 .textareacomments textarea {
@@ -596,6 +1100,7 @@ left: 538px ;
     border-style: solid;
     border-radius: 20px;
     color: black;
+    font-size: 20px;
 }
 
 .botonsubmit input {
@@ -606,8 +1111,29 @@ left: 538px ;
     border-radius: 20px;
     color: black;
     background: none;
+    font-size: 20px;
     }
 
+}
+
+.labelname {
+    font-size: 30px;
+}
+
+.labelapellido {
+    font-size: 30px;
+}
+
+.labelemail {
+    font-size: 30px;
+}
+
+.labelaffair {
+    font-size: 30px;
+}
+
+.labelcomments {
+    font-size: 30px;
 }
 
 /* MOBILE VERSION */
@@ -1094,7 +1620,7 @@ background-size: cover;
 .instagramlogofooter img{
     width: 25px;
     position: absolute;
-    top: 3182px;
+    top: 3153px;
     right: auto;
     bottom: 57px;
     left: 270px;
@@ -1103,14 +1629,14 @@ background-size: cover;
 .facebooklogofooter img {
     width: 27px;
     position: absolute;
-    top: 3180px;
+    top: 3151px;
     right: auto;
     bottom: 57px;
     left: 304px;
 }
 
-#formulariocontact {
-    display: flex;
+.formulariomobile {
+     display: flex;
 flex-direction: column;
 align-items: center;
 position: absolute;
@@ -1118,11 +1644,12 @@ top: 2680px ;
 right: 68px ;
 bottom: 128px;
 left: 52px ;
+line-height: 12px;
 }
 
-.inputname input{
-    width: 200px;
-    height: 20px;
+#inputnamemobile input{
+    width: 150px;
+    height: 15px;
     border-width: 3px;
     border-style: solid;
     border-radius: 20px;
@@ -1130,9 +1657,9 @@ left: 52px ;
     background: none;
 }
 
-.inputapellido input{
-    width: 200px;
-    height: 20px;
+#inputapellidomobile input{
+    width: 150px;
+    height: 15px;
     border-width: 3px;
     border-style: solid;
     border-radius: 20px;
@@ -1140,9 +1667,9 @@ left: 52px ;
     background: none;
 }
 
-.inputemail input {
-    width: 200px;
-    height: 20px;
+#inputemailmobile input {
+    width: 150px;
+    height: 15px;
     border-width: 3px;
     border-style: solid;
     border-radius: 20px;
@@ -1150,9 +1677,9 @@ left: 52px ;
     background: none;
 }
 
-.inputaffair input {
-    width: 200px;
-    height: 20px;
+#inputaffairmobile input {
+    width: 150px;
+    height: 15px;
     border-width: 3px;
     border-style: solid;
     border-radius: 20px;
@@ -1160,9 +1687,9 @@ left: 52px ;
     background: none;
 }
 
-.textareacomments textarea {
-    width: 200px;
-    height: 35px;
+#textareacommentsmobile textarea {
+    width: 150px;
+    height: 50px;
     border-width: 3px;
     border-style: solid;
     border-radius: 20px;
@@ -1170,14 +1697,34 @@ left: 52px ;
     background: none;
 }
 
-.botonsubmit input {
-    width: 70px;
-    height: 35px;    
+#botonsubmitmobile input {
+    width: 50px;
+    height: 25px;    
     border-width: 3px;
     border-style: solid;
     border-radius: 20px;
     color: black;
     background: none;
     }
+
+#labelnamemobile label {
+    font-size: 15px;
+}
+
+#labelapellidomobile label {
+    font-size: 15px;
+}
+
+#labelemailmobile {
+    font-size: 15px;
+}
+
+#labelaffairmobile label {
+    font-size: 15px;
+}
+
+#labelcommentsmobile label {
+    font-size: 15px;
+}
 
 }
