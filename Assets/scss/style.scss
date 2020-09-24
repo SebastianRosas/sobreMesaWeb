@@ -4,7 +4,7 @@
 @font-face {
     font-family: "DK LEMON";
     src: url("../Assets/Tipografia/DK Lemon Yellow Sun.otf");
-}
+} 
 
 h1 {
     font-family: "DK Lemon Yellow Sun";
@@ -37,6 +37,18 @@ textarea {
 
 
 /* Home */
+
+ #botonmenumobile {
+   display: none;
+   background: white;
+ }
+ .menumobile{
+   display: none;
+ }
+
+#mobileheader {
+  display: none;
+}
 
 #homepage {
     
@@ -1160,6 +1172,36 @@ line-height: 15px;
 
 }
 
+#menudesplegable{
+position: absolute;
+top: 0px ;
+right:0px ;
+bottom: 0px ;
+left: 220px;
+
+  img{
+    width: 80px;
+  }
+  ul li{
+    height: 50px ;
+    background-color: salmon;
+    list-style: none;
+  }
+  li{
+    list-style: none;
+    font-family: "DK Lemon Yellow Sun" ;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+
+.menumobile.visible {
+  display: block;
+}
+.menumobile{
+  display: none;
+}
+
 .PageHead {
   display: none;
 
@@ -1194,14 +1236,6 @@ display: none;
     display: none;
 }
 
-#botonmenudesplegable img {
-    width: 70px;
-    position: absolute;
-    top: 20px;
-    right: 282px;
-    bottom: 291px;
-    left: 270px;
-}
 
 #swipeuplogo img {
     width: 35px;

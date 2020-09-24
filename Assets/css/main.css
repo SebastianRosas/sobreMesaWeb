@@ -23,6 +23,13 @@ textarea {
 
 @media screen and (min-width: 1080px) {
   /* Home */
+  #botonmenumobile {
+    display: none;
+    background: white; }
+  .menumobile {
+    display: none; }
+  #mobileheader {
+    display: none; }
   #homepage {
     flex-wrap: nowrap;
     display: grid;
@@ -760,6 +767,27 @@ textarea {
     height: 640px;
     display: inline-block;
     width: 100%; }
+  #menudesplegable {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 220px; }
+    #menudesplegable img {
+      width: 80px; }
+    #menudesplegable ul li {
+      height: 50px;
+      background-color: salmon;
+      list-style: none; }
+    #menudesplegable li {
+      list-style: none;
+      font-family: "DK Lemon Yellow Sun";
+      font-size: 20px;
+      text-decoration: none; }
+  .menumobile.visible {
+    display: block; }
+  .menumobile {
+    display: none; }
   .PageHead {
     display: none; }
   #opcionesmenunavbar a {
@@ -776,13 +804,6 @@ textarea {
     display: none; }
   .ContactMenu {
     display: none; }
-  #botonmenudesplegable img {
-    width: 70px;
-    position: absolute;
-    top: 20px;
-    right: 282px;
-    bottom: 291px;
-    left: 270px; }
   #swipeuplogo img {
     width: 35px;
     position: absolute;
