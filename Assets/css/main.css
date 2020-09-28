@@ -784,6 +784,8 @@ textarea {
       font-family: "DK Lemon Yellow Sun";
       font-size: 20px;
       text-decoration: none; }
+    #menudesplegable a {
+      text-decoration: none; }
   .menumobile.visible {
     display: block; }
   .menumobile {
@@ -890,10 +892,22 @@ textarea {
   #CartelitoAbout img {
     width: 303px;
     position: absolute;
-    top: 860px;
+    top: 200px;
     right: auto;
     bottom: 431px;
-    left: 30px; }
+    left: 25px; }
+  .cartelitomovimiento {
+    animation: shake 1s;
+    animation-iteration-count: infinite; }
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0); }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0); }
+    40%, 60% {
+      transform: translate3d(4px, 0, 0); } }
   /* The Party */
   #thepartypage {
     height: 640px;
