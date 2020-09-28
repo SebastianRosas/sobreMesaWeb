@@ -1,0 +1,25 @@
+@mixin positionabsolut($top,$right,$bottom,$left){
+    position: absolute;
+    top: $top;
+    right:$right ;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin positionrelative($top,$right,$bottom,$left){
+    position: relative;
+    top: $top;
+    right:$right ;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin inputstyle($width,$height,$border-width,$border-radius){
+    width: $width;
+    height: $height;
+    border-width: $border-width;
+    border-style: solid;
+    border-radius: $border-radius;
+    color: black;
+    background: none;
+}

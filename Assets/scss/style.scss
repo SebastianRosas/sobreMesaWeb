@@ -1,4 +1,5 @@
 @import "colores";
+@import "mixins" ;
 
 
 @font-face {
@@ -30,9 +31,9 @@ textarea {
     font-family: "DK Lemon Yellow Sun" ;
     font-size: 20px;
 }
+/* BIG DEVICES*/
 
-
-@media screen and (min-width: 1080px ) {
+@media only screen and (min-width: 1080px)   {
 
 
 
@@ -124,70 +125,37 @@ text-decoration: none;
 #SobremesaLogo img {
     align-items: center;
   width: 1238px ;
-  position: relative;
-    top: 250px;
-    right: 400px;
-    bottom: 342px;
-    left: 330px;
+    @include positionrelative(250px,400px,342px,330px)
 }
 
 #PlatoConQueso img {
     width: 176px;
-    position: relative;
-    top: -290px;
-    right: 1574px;
-    bottom: 380px;
-    left: 170px;
-
+    @include positionrelative(-290px,1574px,380px,170px)
 }
 
 #PlatoTenedorAmrillo img {
     width: 165px;
-    position: relative;
-    top: 0px;
-    right: 167px;
-    bottom: 195px;
-    left: 1600px;
-
+    @include positionrelative(0px,167px,195px,1600px)
 }
 
 #Roto img {
     width: 89px;
-    position: relative;
-    top: -100px ;
-    right: 1406px ;
-    bottom: 120px ;
-    left: 235px;
-
+    @include positionrelative(-100px,1406px,120px,235px)
 }
 
 #Copa img {
     width: 241px;
-    position: relative;
-    top: -200px;
-    right: 700px;
-    bottom: 200px;
-    left: 750px;
-
+    @include positionrelative(-200px,700px,200px,750px)
 }
 
 #Cuchillo img {
     width: 70px;
-    position: relative;
-    top: -800px;
-    right: 152px;
-    bottom: 482px;
-    left: 1605px;
-
+    @include positionrelative(-800px,152px,482px,1605px)
 }
 
 #Tenedor img{
     width: 155px;
-    position: relative;
-    top: -960px;
-    right: 152px;
-    bottom: 482px;
-    left: 1480px;
+    @include positionrelative(-960px,152px,482px,1480px)
 }
 
 #logonavbar {
@@ -360,31 +328,20 @@ text-decoration: none;
 
 .tituloabout h1 {
     font-size: 110px;
-    position: absolute;
-    top: 1490px;
-    right: 1027px;
-    bottom: 645px;
-    left: 267px
+    @include positionabsolut(1490px,1027px,645px,267px)
+
 }
 
 .aboutdescription article p {
     font-size: 35px;
     justify-content: space-between;
-    position: absolute;
-    top: 1660px;
-    right: 1078px;
-    bottom: 357px;
-    left: 319px;
+    @include positionabsolut(1660px,1078px,357px,319px)
 }
 
 
 #CartelitoAbout img {
     width: 582px;
-    position: relative;
-    top: 340px;
-    right: 110px;
-    bottom: 431px;
-    left: 1228px;
+    @include positionabsolut(340px,110px,431px,1228px)
 }
 
 .cartelitomovimiento{
@@ -422,65 +379,37 @@ text-decoration: none;
 
 .TituloTheParty {
     font-size: 100px;
-    position: absolute;
-    top: 2360px;
-    right: 854px;
-    bottom: 1067px;
-    left: 757px;
+    @include positionabsolut(2360px,854px,1067px,757px)
 }
 
 .copatheparty {
     width: 1010px;
-    position: absolute;
-    top: 2100px;
-    right: 1293px;
-    bottom: auto;
-    left: auto;
+    @include positionabsolut(2100px,1293px,auto,auto)
 }
 
 .platosparty {
     width: 767px;
-    position: absolute;
-    top: 2570px;
-    right: 641px;
-    bottom: 904px;
-    left: 512px;
+    @include positionabsolut(2570px,641px,904px,512px)
 } 
 
 .cuchilloparty {
     width: 70px;
-    position: relative;
-    top: 160px;
-    right: 132px;
-    bottom: 901px;
-    left: 1667px;
+    @include positionrelative(160px,132px,901px,1667px)
 }
 
 .tenedorparty {
     width: 160px;
-    position: relative;
-    top: 30px;
-    right: 190px;
-    bottom: 933px;
-    left: 1537px;
+    @include positionrelative(30px,190px,933px,1537px)
 }
 
 .platoesquinaparty {
     width: 439px;
-    position: relative;
-    top: 300px;
-    right: auto;
-    bottom: auto;
-    left: 1450px;
+    @include positionrelative(300px,auto,auto,1450px)
 }
 
 .titulofotosparty {
     font-size: 30px;
-    position: absolute;
-    top: 2823px;
-    right: 1758px;
-    bottom: 773px;
-    left: 119px;
+    @include positionabsolut(2823px,1758px,773px,119px)
 }
 
 #fotosparty img {
@@ -488,34 +417,21 @@ text-decoration: none;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
-    position: relative;
-    top: -200px;
-    right: 1218px;
-    bottom: 356px;
-    left: 92px;
     border-radius: 20px;
+    @include positionrelative(-200px,1218px,356px,92px)
 }
 
 .tituloflyersparty { 
     font-size: 30px;
-    position: absolute;
-    top: 3088px;
-    right: 300px;
-    bottom: 150px;
-    left: 1160px;  
+    @include positionabsolut(3088px,300px,150px,1160px)
 }
 
 #flyersparty img { 
     width: 150px;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
-    top: -628px;
-    right: 188px;
-    bottom: 356px;
-    left: 1122px;
     border-radius: 20px;
-
+    @include positionrelative(-628px,188px,356px,1122px)
 }
 
 #shakecuchilloparty:hover {
@@ -578,149 +494,85 @@ text-decoration: none;
 #gueststitulo {
     z-index: 2;
     font-size: 100px;
-    position: absolute;
-    top: 3872px;
-    right: 730px;
-    bottom: 757px;
-    left: 800px;
+    @include positionabsolut(3872px,730px,757px,800px)
 }
 
 .Botella img {
     z-index: 1;
     width: 1050px;
-    position: absolute;
-    top: 3613px;
-    right: 653px;
-    bottom: 0px;
-    left: 0px;
+    @include positionabsolut(3613px,653px,0px,0px)
 }
 
 .ethel {
     width: 160px;
-    position: absolute;
-    top: 3870px;
-    right: 408px;
-    bottom: 788px;
-    left: 1228px;
+    @include positionabsolut(3870px,408px,788px,1228px)
 }
 
 .georgiooniani {
     width: 154px;
-    position: absolute;
-    top: 4100px;
-    right: 124px;
-    bottom: 608px;
-    left: 1642px;
+    @include positionabsolut(4100px,124px,608px,1642px)
 }
 
 .hugie {
     width: 166px;
-    position: absolute;
-    top: 4600px;
-    right: 342px;
-    bottom: 71px;
-    left: 1288px;
+    @include positionabsolut(4600px,342px,71px,1288px)
 }
 
 .mayell {
     width: 143px;
-    position: absolute;
-    top: 4020px;
-    right: 243px;
-    bottom: 523px;
-    left: 1382px;
+    @include positionabsolut(4020px,243px,523px,1382px)
 }
 
 .mrmurray {
     width: 163px;
-    position: absolute;
-    top: 4460px;
-    right: 588px;
-    bottom: 91px;
-    left: 1000px;
+    @include positionabsolut(4460px,588px,91px,1000px)
 }
 
 .oswaldo {
     width: 206px;
-    position: absolute;
-    top: 4320px;
-    right: 124px;
-    bottom: 238px;
-    left: 1590px;
+    @include positionabsolut(4320px,124px,238px,1590px)
 }
 
 .quest {
     width: 113px;
-    position: absolute;
-    top: 4420px;
-    right: 327px;
-    bottom: 285px;
-    left: 1300px;
+    @include positionabsolut(4420px,327px,285px,1300px)
 }
 
 .sugarfree {
     width: 119px;
-    position: absolute;
-    top: 4250px;
-    right: 485px;
-    bottom: 367px;
-    left: 1130px;
+    @include positionabsolut(4250px,485px,367px,1130px)
 }
 
 .timkern {
     width: 106px;
-    position: absolute;
-    top: 3900px;
-    right: 170px;
-    bottom: 748px;
-    left: 1520px;
+    @include positionabsolut(3900px,170px,748px,1520px)
 }
 
 .tzena {
     width: 101px;
-    position: absolute;
-    top: 4520px;
-    right: 209px;
-    bottom: 90px;
-    left: 1600px;
+    @include positionabsolut(4520px,209px,90px,1600px)
 } 
 
 .cuchilloguests img {
     z-index: 3;
     width: 54px;
-    position: absolute;
-    top: 4125px;
-    right: 966px;
-    bottom: 415px;
-    left: 710px;
+    @include positionabsolut(4125px,966px,415px,710px)
 }
 
 .tenedorguests {
     z-index: 4;
     width: 60px;
-    position: absolute;
-    top: 4320px;
-    right: 979px;
-    bottom: 290px;
-    left: 540px;
+    @include positionabsolut(4320px,979px,290px,540px)
 }
 
 .plato2guests img{
     width: 130px;
-    position: absolute;
-    top: 4220px;
-    right: 262px;
-    bottom: 389px;
-    left: 1400px;
+    @include positionabsolut(4220px,262px,389px,1400px)
 }
 
 .quesoguests img {
     width: 156px;
-    position: absolute;
-    top: 4020px;
-    right: 513px;
-    left: 1100px;
-    bottom: 546px;
+    @include positionabsolut(4020px,513px,1100px,546px)
 }
 
 #shakeethel:hover {
@@ -1012,149 +864,100 @@ background-size: cover;
 
 .tituloformulario h1 {
     font-size: 100px;
-    position: absolute;
-    top: 4870px;
-    right: 758px;
-    bottom: 806px;
-    left: 758px
+    @include positionabsolut(4870px,758px,806px,758px)
 }
 
 .quesocontact img {
     width: 192px ;
-    position: absolute;
-    top: 5100px;
-    right: 1466px;
-    bottom: 716px;
-    left: 262px;
+    @include positionabsolut(5100px,1466px,716px,262px)
 }
 
 .sobremesalogocontact img {
     width: 317px;
-    position: absolute;
-    top: 5160px;
-    right: 140px;
-    bottom: 494px;
-    left: 1420px;
+    @include positionabsolut(5160px,140px,494px,1420px)
 }
 
 
 .instagramlogofooter img{
     width: 40px;
-    position: absolute;
-    top: 5730px;
-    right: 360px;
-    bottom: 45px;
-    left: 1520px;
+    @include positionabsolut(5730px,360px,45px,1520px)
 }
 
 .facebooklogofooter img {
     width: 43px;
-    position: absolute;
-    top: 5725px;
-    right: 297px;
-    bottom: 39px;
-    left: 1572px;
+    @include positionabsolut(5725px,297px,39px,1572px)
 }
 
 #formulariocontact {
     display: flex;
 flex-direction: column;
 align-items: center;
-position: absolute;
-top: 5100px ;
-right: 538px ;
-bottom: 190px;
-left: 538px ;
 line-height: 15px;
+@include positionabsolut(5100px,538px,190px,538px)
 }
 
 .inputname input{
-    width: 500px;
-    height: 25px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
-    color: black;
-    font-size: 20px;
+  font-size: 20px;
+  @include inputstyle(500px,25px,3px,20px)
 }
 
 .inputapellido input{
-    width: 500px;
-    height: 25px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
-    color: black;
     font-size: 20px;
+    @include inputstyle(500px,25px,3px,20px)
 }
 
 .inputemail input {
-    width: 500px;
-    height: 25px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
-    color: black;
-    font-size: 20px;
+  font-size: 20px;
+  @include inputstyle(500px,25px,3px,20px)
 }
 
 .inputaffair input {
-    width: 500px;
-    height: 25px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
-    color: black;
-    font-size: 20px;
+  font-size: 20px;
+  @include inputstyle(500px,25px,3px,20px)
 }
 
 .textareacomments textarea {
-    width: 500px;
-    height: 130px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
-    color: black;
     font-size: 20px;
+    @include inputstyle(500px,130px,3px,20px)
 }
 
 .botonsubmit input {
-    width: 70px;
-    height: 35px;    
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
-    color: black;
-    background: none;
     font-size: 20px;
+    @include inputstyle(70px,35px,3px,20px)
     }
 
+    .labelname {
+      font-size: 30px;
+  }
+  
+  .labelapellido {
+      font-size: 30px;
+  }
+  
+  .labelemail {
+      font-size: 30px;
+  }
+  
+  .labelaffair {
+      font-size: 30px;
+  }
+  
+  .labelcomments {
+      font-size: 30px;
+  }
+  
+
 }
 
-.labelname {
-    font-size: 30px;
-}
 
-.labelapellido {
-    font-size: 30px;
-}
 
-.labelemail {
-    font-size: 30px;
-}
+/* LARGE DEVICES*/
 
-.labelaffair {
-    font-size: 30px;
-}
-
-.labelcomments {
-    font-size: 30px;
-}
 
 /* MOBILE VERSION */
 
 
-@media (max-width: 640px)  {
+ @media only screen and (min-width: 0px) and (max-width: 639px) {
 
     /* Home Mobile */
 
@@ -1173,13 +976,13 @@ line-height: 15px;
 }
 
 #menudesplegable{
-position: absolute;
-top: 0px ;
-right:0px ;
-bottom: 0px ;
-left: 220px;
+  position: absolute;
+  top: 0px;
+  right:0px ;
+  bottom: 0px;
+  left: 220px;
+  img {
 
-  img{
     width: 80px;
   }
   ul li{
@@ -1244,80 +1047,44 @@ display: none;
 
 #swipeuplogo img {
     width: 35px;
-    position: absolute;
-    top: 560px;
-    right: 0px;
-    bottom: 291px;
-    left: 165px;
+    @include positionabsolut(560px,0px,291px,165px)
 }
 
 #SobremesaLogo img {
     align-items: center;
     width: 300px ;
-    position: relative;
-      top: 289px ;
-      right: 28.5px ;
-      bottom: 140px ;
-      left: 28.5px;
+    @include positionrelative (289px,28.5px,140px,28.5px)
 }
 
 #PlatoConQueso img {
     width: 79px;
-    position: absolute;
-    top: 183px ;
-    right: 282px ;
-    bottom: 291px ;
-    left: 29px;
-
+    @include positionabsolut(183px,282px,291px,29px)
+    
 }
 
 #PlatoTenedorAmrillo img {
     width: 70px ;
-    position: absolute;
-    top: 486px ;
-    right: 36px ;
-    bottom: 0px ;
-    left: 260px;
-
+    @include positionabsolut(486px,36px,0px,260px)
 }
 
 #Roto img {
     width: 44px;
-    position: absolute;
-    top: 450px ;
-    right: 302px ;
-    bottom: 0px ;
-    left: 44px;
-
+    @include positionabsolut(450px,302px,0px,44px)
 }
 
 #Copa img {
     width: 115px;
-    position: absolute;
-    top: 414px ;
-    right: 122px ;
-    bottom: 0px ;
-    left: 122px;
-
+    @include positionabsolut(414px,122px,0px,122px)
 }
 
 #Cuchillo img {
     width: 35px;
-    position: absolute;
-    top: 210px;
-    right: 36px;
-    bottom: 0px;
-    left: 295px;
-
+    @include positionabsolut(210px,36px,0px,295px)
 }
 
 #Tenedor img{
     width: 76px;
-    position: absolute;
-    top: 206px;
-    right: 47px;
-    bottom: 0px;
-    left: 230px;
+    @include positionabsolut(206px,47px,0px,230px)
 }
 
 #logonavbar {
@@ -1340,31 +1107,19 @@ display: none;
 
 .tituloabout h1 {
     font-size: 50px;
-    position: absolute;
-    top: 700px;
-    right: auto;
-    bottom: 57px;
-    left: 50px;
+    @include positionabsolut(700px,auto,57px,50px)
 }
 
 .aboutdescription article p {
     font-size: 17px;
     justify-content: space-between;
-    position: absolute;
-    top: 1100px;
-    right: auto;
-    bottom: 57px;
-    left: 40px;
+    @include positionabsolut(1100px,auto,57px,40px)
     }
 
 
 #CartelitoAbout img {
     width: 303px;
-    position: absolute;
-    top: 200px;
-    right: auto;
-    bottom: 431px;
-    left: 25px;
+    @include positionabsolut(200px,auto,431px,25px)
 }
 
 .cartelitomovimiento{
@@ -1402,29 +1157,17 @@ display: none;
 
 .TituloTheParty {
     font-size: 50px;
-    position: absolute;
-    top: 1300px;
-    right: auto;
-    bottom: 57px;
-    left: 100px;
+    @include positionabsolut(1300px,auto,57px,100px)
 }
 
 .copatheparty {
     width: 380px;
-    position: absolute;
-    top: 1400px;
-    right: 0px;
-    bottom: auto;
-    left: -135px;
+    @include positionabsolut(1400px,0px,auto,-135px)
 }   
 
 .platosparty {
     width: 310px;
-    position: absolute;
-    top: 1400px;
-    right: 33px;
-    bottom: 671px;
-    left: 25px;
+    @include positionabsolut(1400px,33px,671px,25px)
 } 
 
 .cuchilloparty {
@@ -1437,20 +1180,12 @@ display: none;
 
 .platoesquinaparty {
     width: 260px;
-    position: relative;
-    top: 500px;
-    right: auto;
-    bottom: auto;
-    left: 90px;
+    @include positionrelative(500px,auto,auto,90px)
 }
 
 .titulofotosparty {
     font-size: 17px;
-    position: absolute;
-    top: 1455px;
-    right: auto;
-    bottom: 57px;
-    left: 90px;
+    @include positionabsolut(1455px,auto,57px,90px)
 }
 
 #fotosparty img {
@@ -1458,21 +1193,13 @@ display: none;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
-    position: relative;
-    top: -70px;
-    right: auto;
-    bottom: auto;
-    left: 70px;
     border-radius: 15px;
+    @include positionrelative(-70px,auto,auto,70px)
 }
 
 .tituloflyersparty { 
     font-size: 17px;
-    position: absolute;
-    top: 1857px;
-    right: auto;
-    bottom: 57px;
-    left: 17px
+    @include positionabsolut(1857px,auto,57px,17px)
 }
 
 #flyersparty img {
@@ -1480,13 +1207,7 @@ display: none;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
-    position: relative;
-    top: -50px;
-    right: auto;
-    bottom: auto;
-    left: 0px;
-    border-radius: 15px;
-
+    @include positionrelative(-50px,auto,auto,0px)
 }
 
 /* Guests */
@@ -1499,151 +1220,87 @@ display: none;
 #gueststitulo {
     z-index: 2;
     font-size: 40px;
-    position: absolute;
-    top: 1965px;
-    right: auto;
-    bottom: 57px;
-    left: 17px;
+    @include positionabsolut(1965px,auto,57px,17px)
 }
 
 .Botella img {
     z-index: 1;
     width: 350px;
-    position: absolute;
-    top: 2208px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    @include positionabsolut(2208px,0px,0px,0px)
 }
 
 .ethel {
     width: 60px;
-    position: absolute;
-    top: 2100px;
-    right: auto;
-    bottom: 57px;
-    left: 17px;
+    @include positionabsolut(2100px,auto,57px,17px)
 }
 
 .georgiooniani {
     width: 60px;
-    position: absolute;
-    top: 2050px;
-    right: auto;
-    bottom: 57px;
-    left: 100px;
+    @include positionabsolut(2050px,auto,57px,100px)
 }
 
 .hugie {
     width: 70px;
-    position: absolute;
-    top: 2300px;
-    right: auto;
-    bottom: 57px;
-    left: 20px;
+    @include positionabsolut(2300px,auto,57px,20px)
 }
 
 
 .mayell {
     width: 62px;
-    position: absolute;
-    top: 2150px;
-    right: auto;
-    bottom: 57px;
-    left: 100px;
+    @include positionabsolut(2150px,auto,57px,100px)
 }
 
 .mrmurray {
     width: 60px;
-    position: absolute;
-    top: 2090px;
-    right: auto;
-    bottom: 57px;
-    left: 175px;
+    @include positionabsolut(2090px,auto,57px,175px)
 }
 
 .oswaldo {
     width: 70px;
-    position: absolute;
-    top: 2060px;
-    right: auto;
-    bottom: 57px;
-    left: 230px;
+    @include positionabsolut(2060px,auto,57px,230px)
 }
 
 .quest {
     width: 60px;
-    position: absolute;
-    top: 2165px;
-    right: auto;
-    bottom: 57px;
-    left: 280px;
+    @include positionabsolut(2165px,auto,57px,280px)
 }
 
 .sugarfree {
     width: 45px;
-    position: absolute;
-    top: 2110px;
-    right: auto;
-    bottom: 57px;
-    left: 290px;
+    @include positionabsolut(2110px,auto,57px,290px)
 }
 
 .timkern {
     width: 50px;
-    position: absolute;
-    top: 2220px;
-    right: auto;
-    bottom: 57px;
-    left: 20px;
+    @include positionabsolut(2220px,auto,57px,20px)
 }
 
 .tzena {
     width: 60px;
-    position: absolute;
-    top: 2240px;
-    right: auto;
-    bottom: 57px;
-    left: 110px;
     transform: rotate(-20deg);
+    @include positionabsolut(2240px,auto,57px,110px)
 } 
 
 .cuchilloguests img {
     z-index: 3;
     width: 29px;
-    position: absolute;
-    top: 2380px;
-    right: 0px;
-    bottom: 0px;
-    left: 238px;
+    @include positionabsolut(2380px,0px,0px,238px)
 }
 
 .tenedorguests img {
     z-index: 4;
     width: 100px;
-    position: absolute;
-    top: 2460px;
-    right: 0px;
-    bottom: 0px;
-    left: 150px;
+    @include positionabsolut(2460px,0px,0px,150px)
 }
 
 .plato2guests img{
     width: 50px;
-    position: absolute;
-    top: 2165px;
-    right: auto;
-    bottom: 57px;
-    left: 190px;
+    @include positionabsolut(2165px,auto,57px,190px)
 }
 
 .quesoguests img {
     width: 48px;
-    position: absolute;
-    top: 2150px;
-    right: auto;
-    bottom: 57px;
-    left: 30px;
+    @include positionabsolut(2150px,auto,57px,30px)
 }
 /* Contact */
 
@@ -1657,120 +1314,61 @@ background-size: cover;
 
 .tituloformulario h1 {
     font-size: 50px;
-    position: absolute;
-    top: 2570px;
-    right: auto;
-    bottom: 57px;
-    left: 85px;
+    @include positionabsolut(2570px,auto,57px,85px)
 }
 
 .quesocontact img {
     width: 100px;
-    position: absolute;
-    top: 2990px;
-    right: auto;
-    bottom: 57px;
-    left: -69px;
+    @include positionabsolut(2990px,auto,57px,-69px)
 }
 
 .sobremesalogocontact img {
     width: 100px;
-    position: absolute;
-    top: 2670px;
-    right: auto;
-    bottom: 57px;
-    left: 250px;
     transform: rotate(50deg);
+    @include positionabsolut(2670px,auto,57px,250px)
 }
 
 .instagramlogofooter img{
     width: 25px;
-    position: absolute;
-    top: 3153px;
-    right: auto;
-    bottom: 57px;
-    left: 270px;
+    @include positionabsolut(3153px,auto,57px,270px)
 }
 
 .facebooklogofooter img {
     width: 27px;
-    position: absolute;
-    top: 3151px;
-    right: auto;
-    bottom: 57px;
-    left: 304px;
+    @include positionabsolut(3151px,auto,57px,304px)
 }
 
 .formulariomobile {
      display: flex;
 flex-direction: column;
 align-items: center;
-position: absolute;
-top: 2680px ;
-right: 68px ;
-bottom: 128px;
-left: 52px ;
 line-height: 12px;
+@include positionabsolut(2680px,68px,128px,52px)
 }
 
 #inputnamemobile input{
-    width: 150px;
-    height: 15px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
-    color: black;
-    background: none;
+  @include inputstyle(150px,15px,3px,20px)
 }
 
 #inputapellidomobile input{
-    width: 150px;
-    height: 15px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
-    color: black;
-    background: none;
+  @include inputstyle(150px,15px,3px,20px)
 }
 
 #inputemailmobile input {
-    width: 150px;
-    height: 15px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
-    color: black;
-    background: none;
+  @include inputstyle(150px,15px,3px,20px)
 }
 
 #inputaffairmobile input {
-    width: 150px;
-    height: 15px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
-    color: black;
-    background: none;
+  @include inputstyle(150px,15px,3px,20px)
+
 }
 
 #textareacommentsmobile textarea {
-    width: 150px;
-    height: 50px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
-    color: black;
-    background: none;
+  @include inputstyle(150px,50px,3px,20px)
 }
 
 #botonsubmitmobile input {
-    width: 50px;
-    height: 25px;    
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
-    color: black;
-    background: none;
+  @include inputstyle(50px,25px,3px,20px)
     }
 
 #labelnamemobile label {
