@@ -1,2 +1,0 @@
-# sobremesaweb
-Repositorio de Sobremesa
