@@ -1,24 +1,24 @@
 @font-face {
   font-family: "DK LEMON";
-  src: url("../Tipografia/DKLemonYellowSun.woff"); }
+  src: url("../Assets/Tipografia/DK Lemon Yellow Sun.otf"); }
 
 h1 {
-  font-family: "DK LEMON"; }
+  font-family: "DK Lemon Yellow Sun"; }
 
 h3 {
-  font-family: "DK LEMON"; }
+  font-family: "DK Lemon Yellow Sun"; }
 
 p {
-  font-family: "DK LEMON"; }
+  font-family: "DK Lemon Yellow Sun"; }
 
 label {
-  font-family: "DK LEMON"; }
+  font-family: "DK Lemon Yellow Sun"; }
 
 input {
-  font-family: "DK LEMON"; }
+  font-family: "DK Lemon Yellow Sun"; }
 
 textarea {
-  font-family: "DK LEMON";
+  font-family: "DK Lemon Yellow Sun";
   font-size: 20px; }
 
 /* BIG DEVICES*/
@@ -642,10 +642,9 @@ textarea {
   /* Contact */
   .contactofondo {
     display: inline-block;
-    width: 1920px;
     height: 1080px;
     width: 100%;
-    background-image: url("../../images/Contact/fondocontact.png");
+    background-image: url("../../images/Contact/FondoContact.png");
     background-size: cover; }
   .tituloformulario h1 {
     font-size: 100px;
@@ -783,7 +782,7 @@ textarea {
       list-style: none; }
     #menudesplegable li {
       list-style: none;
-      font-family: "DK Lemon Yellow Sun";
+      font-family: "DK LEMON";
       font-size: 20px;
       text-decoration: none; }
     #menudesplegable a {
