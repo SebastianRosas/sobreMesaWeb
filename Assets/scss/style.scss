@@ -4,891 +4,943 @@
 
 @font-face {
     font-family: "DK LEMON";
-    src: url("../Assets/Tipografia/DK Lemon Yellow Sun.otf");
+    src: url("/Assets/Tipografia/DKLemonYellowSun.woff");
+} 
+@font-face {
+  font-family: "DK LEMON GITHUB";
+  src: url("/sobremesaweb/Assets/Tipografia/DKLemonYellowSun.woff");
 } 
 
 h1 {
-    font-family: "DK Lemon Yellow Sun";
+    font-family: "DK LEMON", "DK LEMON GITHUB";
 }
 
 h3 {
-    font-family: "DK Lemon Yellow Sun";
+    font-family: "DK LEMON", "DK LEMON GITHUB";
 }
 
 p {
-    font-family: "DK Lemon Yellow Sun";
+    font-family: "DK LEMON", "DK LEMON GITHUB";
 }
 
 label {
-    font-family: "DK Lemon Yellow Sun" ;
+    font-family: "DK LEMON", "DK LEMON GITHUB" ;
 }
 
 input {
-    font-family: "DK Lemon Yellow Sun" ;
+    font-family: "DK LEMON", "DK LEMON GITHUB" ;
 }
 
 textarea {
-    font-family: "DK Lemon Yellow Sun" ;
+    font-family: "DK LEMON", "DK LEMON GITHUB" ;
     font-size: 20px;
 }
-/* BIG DEVICES*/
 
-@media only screen and (min-width: 1080px)   {
 
+
+// PARA TODO, MENOS PARA LA VERSION MOBILE
 
 
 /* Home */
 
- #botonmenumobile {
-   display: none;
-   background: white;
- }
- .menumobile{
-   display: none;
- }
-
-#mobileheader {
+#botonmenumobile {
+  display: none;
+  background: white;
+}
+.menumobile{
   display: none;
 }
 
+#mobileheader {
+ display: none;
+}
+
 #homepage {
-    
-    flex-wrap: nowrap;
-    display: grid;
-    height: 1080px;
-    display: inline-block;
-    width: 100%;
+   
+   flex-wrap: nowrap;
+   display: grid;
+   height: 1080px;
+   display: inline-block;
+   width: 100%;
 
 }
 
 .PageHead {
-    z-index: 100;
-    padding-top: 10px;
-    font-family: "DK Lemon Yellow Sun";
-    font-size: 30px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    right: 0px;
+width: 100%;
+   z-index: 100;
+   padding-top: 10px;
+   font-family: "DK LEMON", "DK LEMON GITHUB";
+   font-size: 30px;
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   top: 0px;
+   right: 0px;
 
 }
 
 #opcionesmenunavbar a {
-    padding: 20px;
+   padding: 20px;
 }
 
 .PageHead img{
-    width: 90px;
-    align-items: center;
-    padding: 0px 100px ;
-  
+   width: 90px;
+   align-items: center;
+   padding: 0px 100px ;
+ 
 }
 
 
-#Home {
+.Home {
 color: $font-color;
 text-decoration: none;
 }
 
+.hoverhomemenu:hover{
+ color: rgb(255, 89, 89);
+}
+
+
 .AboutMenu {
-    color: $font-color;
-    text-decoration: none;
+   color: $font-color;
+   text-decoration: none;
+}
+
+.hoveraboutmenu:hover{
+ color: rgb(255, 89, 89);
 }
 
 .ThePartyMenu {
-    color: $font-color;
-    text-decoration: none;
+   color: $font-color;
+   text-decoration: none;
 }
 
+.hoverthepartymenu:hover{
+ color: rgb(255, 89, 89);
+}
+
+
 .GuestsMenu {
-    color: $font-color;
-    text-decoration: none;
+   color: $font-color;
+   text-decoration: none;
+}
+
+.hoverguestsmenu:hover{
+ color: rgb(255, 89, 89);
 }
 
 .ContactMenu {
-    color: $font-color;
-    text-decoration: none;
+   color: $font-color;
+   text-decoration: none;
+}
+
+.hovercontactmenu:hover{
+ color: rgb(255, 89, 89);
 }
 
 #swipeuplogo img {
-    display: none;
+   display: none;
 }
 
 #botonmenudesplegable img {
-    display: none;
+   display: none;
 }
 
+
 #SobremesaLogo img {
-    align-items: center;
-  width: 1238px ;
-    @include positionrelative(250px,400px,342px,330px)
+  width: 65vw ;
+  position: absolute;
+  top: 250px;
+  left: 17vw;
 }
 
 #PlatoConQueso img {
-    width: 176px;
-    @include positionrelative(-290px,1574px,380px,170px)
+  width: 8vw;
+  position: relative;
+  top: 200px;
+  left: 10vw;
 }
 
 #PlatoTenedorAmrillo img {
-    width: 165px;
-    @include positionrelative(0px,167px,195px,1600px)
+   width: 8vw;
+   position: relative;
+   top: 450px; 
+   left: 82vw;
+   
 }
 
 #Roto img {
-    width: 89px;
-    @include positionrelative(-100px,1406px,120px,235px)
+   width: 4vw;
+   position: relative;
+   top: 380px ;
+   left: 13vw;
 }
 
 #Copa img {
-    width: 241px;
-    @include positionrelative(-200px,700px,200px,750px)
+   width: 12vw;
+   position: relative;
+   top: 190px;
+   left: 46vw;
+   
 }
 
 #Cuchillo img {
-    width: 70px;
-    @include positionrelative(-800px,152px,482px,1605px)
+   width: 4vw;
+    position: absolute;
+    top: 130px;
+    left: 87vw;
 }
 
 #Tenedor img{
-    width: 155px;
-    @include positionrelative(-960px,152px,482px,1480px)
+  width: 8vw;
+  position: absolute;
+  top: 120px;
+  left:  81vw;
 }
 
 #logonavbar {
-    padding: 0px 200px;
+   padding: 0px 200px;
 }
 
 #opcionesmenunavbar {
-    padding: 0px 200px;
+   position: absolute;
+   width: 100%;
+   text-align: right;
+   padding-right: 30px;
 }
 
 .shakeplatoconqueso:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  .shakeplatotenedoramarillo:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ .shakeplatotenedoramarillo:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  .shakecopa:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ .shakecopa:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  .shakeroto:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ .shakeroto:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  .shaketenedor:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ .shaketenedor:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  .shakecuchillo:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ .shakecuchillo:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
 /* About */
 
 .AboutFondo {
-    height: 1080px;
-    display: inline-block;
-    width: 100%;
-    background-image: url(../../images/About/FondoAbout1920x1080.png);
-    background-size: cover;
+   height: 1080px;
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   background-image: url(../../images/About/FondoAbout1920x1080.png);
+   background-size: 100%;
+   background-repeat: no-repeat;
 }
 
 .tituloabout h1 {
-    font-size: 110px;
-    @include positionabsolut(1490px,1027px,645px,267px)
+   font-size: 5vw;
+   position: absolute;
+   top: 70vw;
+   left: 16vw;
 
 }
 
-.aboutdescription article p {
-    font-size: 35px;
-    justify-content: space-between;
-    @include positionabsolut(1660px,1078px,357px,319px)
+.aboutdescription p {
+   font-size: 35px;
+   
+   @include positionabsolut(1660px,1078px,357px,319px)
 }
 
 
 #CartelitoAbout img {
-    width: 582px;
-    @include positionabsolut(340px,110px,431px,1228px)
+   width: 30vw;
+   position: absolute;
+   top: 20vw;
+   right: 70px;
+
 }
 
 .cartelitomovimiento{
-    animation: shake 1s;
-    animation-iteration-count: infinite;
-  }
-  
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+   animation: shake 1s;
+   animation-iteration-count: infinite;
+ }
+ 
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
 /* The Party */
 
 #thepartypage {
-    height: 1080px;
-    display: inline-block;
-    width: 100%;
+   height: 1080px;
+   display: inline-block;
+   width: 100%;
 }
 
 
 .TituloTheParty {
-    font-size: 100px;
-    @include positionabsolut(2360px,854px,1067px,757px)
+   font-size: 100px;
+   @include positionabsolut(2360px,854px,1067px,757px)
 }
 
 .copatheparty {
-    width: 1010px;
-    @include positionabsolut(2100px,1293px,auto,auto)
+   width: 1010px;
+   @include positionabsolut(2100px,1293px,auto,auto)
 }
 
 .platosparty {
-    width: 767px;
-    @include positionabsolut(2570px,641px,904px,512px)
+   width: 767px;
+   @include positionabsolut(2570px,641px,904px,512px)
 } 
 
 .cuchilloparty {
-    width: 70px;
-    @include positionrelative(160px,132px,901px,1667px)
+   width: 70px;
+   @include positionrelative(160px,132px,901px,1667px)
 }
 
 .tenedorparty {
-    width: 160px;
-    @include positionrelative(30px,190px,933px,1537px)
+   width: 160px;
+   @include positionrelative(30px,190px,933px,1537px)
 }
 
 .platoesquinaparty {
-    width: 439px;
-    @include positionrelative(300px,auto,auto,1450px)
+   width: 439px;
+   @include positionrelative(300px,auto,auto,1450px)
 }
 
 .titulofotosparty {
-    font-size: 30px;
-    @include positionabsolut(2823px,1758px,773px,119px)
+   font-size: 30px;
+   @include positionabsolut(2823px,1758px,773px,119px)
 }
 
 #fotosparty img {
-    width: 150px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-    border-radius: 20px;
-    @include positionrelative(-200px,1218px,356px,92px)
+   width: 150px;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 10px;
+   border-radius: 20px;
+   @include positionrelative(-200px,1218px,356px,92px)
 }
 
 .tituloflyersparty { 
-    font-size: 30px;
-    @include positionabsolut(3088px,300px,150px,1160px)
+   font-size: 30px;
+   @include positionabsolut(3088px,300px,150px,1160px)
 }
 
 #flyersparty img { 
-    width: 150px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-radius: 20px;
-    @include positionrelative(-628px,188px,356px,1122px)
+   width: 150px;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   border-radius: 20px;
+   @include positionrelative(-628px,188px,356px,1122px)
 }
 
 #shakecuchilloparty:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  #shaketenedorparty:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ #shaketenedorparty:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
 /* Guests */
 
 #guestspage {
-    height: 1080px;
-    display: inline-block;
-    width: 100%;
+   height: 1080px;
+   display: inline-block;
+   width: 100%;
 }
 #gueststitulo {
-    z-index: 2;
-    font-size: 100px;
-    @include positionabsolut(3872px,730px,757px,800px)
+   z-index: 2;
+   font-size: 100px;
+   @include positionabsolut(3872px,730px,757px,800px)
 }
 
 .Botella img {
-    z-index: 1;
-    width: 1050px;
-    @include positionabsolut(3613px,653px,0px,0px)
+   z-index: 1;
+   width: 1050px;
+   @include positionabsolut(3613px,653px,0px,0px)
 }
 
 .ethel {
-    width: 160px;
-    @include positionabsolut(3870px,408px,788px,1228px)
+   width: 160px;
+   @include positionabsolut(3870px,408px,788px,1228px)
 }
 
 .georgiooniani {
-    width: 154px;
-    @include positionabsolut(4100px,124px,608px,1642px)
+   width: 154px;
+   @include positionabsolut(4100px,124px,608px,1642px)
 }
 
 .hugie {
-    width: 166px;
-    @include positionabsolut(4600px,342px,71px,1288px)
+   width: 166px;
+   @include positionabsolut(4600px,342px,71px,1288px)
 }
 
 .mayell {
-    width: 143px;
-    @include positionabsolut(4020px,243px,523px,1382px)
+   width: 143px;
+   @include positionabsolut(4020px,243px,523px,1382px)
 }
 
 .mrmurray {
-    width: 163px;
-    @include positionabsolut(4460px,588px,91px,1000px)
+   width: 163px;
+   @include positionabsolut(4460px,588px,91px,1000px)
 }
 
 .oswaldo {
-    width: 206px;
-    @include positionabsolut(4320px,124px,238px,1590px)
+   width: 206px;
+   @include positionabsolut(4320px,124px,238px,1590px)
 }
 
 .quest {
-    width: 113px;
-    @include positionabsolut(4420px,327px,285px,1300px)
+   width: 113px;
+   @include positionabsolut(4420px,327px,285px,1300px)
 }
 
 .sugarfree {
-    width: 119px;
-    @include positionabsolut(4250px,485px,367px,1130px)
+   width: 119px;
+   @include positionabsolut(4250px,485px,367px,1130px)
 }
 
 .timkern {
-    width: 106px;
-    @include positionabsolut(3900px,170px,748px,1520px)
+   width: 106px;
+   @include positionabsolut(3900px,170px,748px,1520px)
 }
 
 .tzena {
-    width: 101px;
-    @include positionabsolut(4520px,209px,90px,1600px)
+   width: 101px;
+   @include positionabsolut(4520px,209px,90px,1600px)
 } 
 
 .cuchilloguests img {
-    z-index: 3;
-    width: 54px;
-    @include positionabsolut(4125px,966px,415px,710px)
+   z-index: 3;
+   width: 54px;
+   @include positionabsolut(4125px,966px,415px,710px)
 }
 
 .tenedorguests {
-    z-index: 4;
-    width: 60px;
-    @include positionabsolut(4320px,979px,290px,540px)
+   z-index: 4;
+   width: 60px;
+   @include positionabsolut(4320px,979px,290px,540px)
 }
 
 .plato2guests img{
-    width: 130px;
-    @include positionabsolut(4220px,262px,389px,1400px)
+   width: 130px;
+   @include positionabsolut(4220px,262px,389px,1400px)
 }
 
 .quesoguests img {
-    width: 156px;
-    @include positionabsolut(4020px,513px,1100px,546px)
+   width: 156px;
+   @include positionabsolut(4020px,513px,1100px,546px)
 }
 
 #shakeethel:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  #shakegeorgiooniani:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ #shakegeorgiooniani:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  #shakehugie:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ #shakehugie:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  #shakemayell:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ #shakemayell:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  #shakemrmurray:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ #shakemrmurray:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  #shakeoswaldo:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ #shakeoswaldo:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-   #shakequest:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+  #shakequest:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  #shakesugarfree:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ #shakesugarfree:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
-  #shaketimkern :hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+ #shaketimkern :hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
 
- #shaketzena:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
-  
-  #shaketimkern:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
-  
+#shaketzena:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
+ 
+ #shaketimkern:hover {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
+ 
 /* Contact */
 
 .contactofondo {
-    display: inline-block;
-    height: 1080px;
-    width: 100%;
-    background-image: url("../../images/Contact/FondoContact.png");
+   display: inline-block;
+   height: 1080px;
+   width: 100%;
+   background-image: url("../../images/Contact/FondoContact.png");
 background-size: cover;
 
 }
 
 .tituloformulario h1 {
-    font-size: 100px;
-    @include positionabsolut(4870px,758px,806px,758px)
+   font-size: 100px;
+   @include positionabsolut(4870px,758px,806px,758px)
 }
 
 .quesocontact img {
-    width: 192px ;
-    @include positionabsolut(5100px,1466px,716px,262px)
+   width: 192px ;
+   @include positionabsolut(5100px,1466px,716px,262px)
 }
 
 .sobremesalogocontact img {
-    width: 317px;
-    @include positionabsolut(5160px,140px,494px,1420px)
+   width: 317px;
+   @include positionabsolut(5160px,140px,494px,1420px)
 }
 
 
 .instagramlogofooter img{
-    width: 40px;
-    @include positionabsolut(5730px,360px,45px,1520px)
+   width: 40px;
+   @include positionabsolut(5730px,360px,45px,1520px)
 }
 
 .facebooklogofooter img {
-    width: 43px;
-    @include positionabsolut(5725px,297px,39px,1572px)
+   width: 43px;
+   @include positionabsolut(5725px,297px,39px,1572px)
 }
 
 #formulariocontact {
-    display: flex;
+   display: flex;
 flex-direction: column;
 align-items: center;
 line-height: 15px;
@@ -896,62 +948,72 @@ line-height: 15px;
 }
 
 .inputname input{
-  font-size: 20px;
-  @include inputstyle(500px,25px,3px,20px)
+ font-size: 20px;
+ @include inputstyle(500px,25px,3px,20px)
 }
 
 .inputapellido input{
-    font-size: 20px;
-    @include inputstyle(500px,25px,3px,20px)
+   font-size: 20px;
+   @include inputstyle(500px,25px,3px,20px)
 }
 
 .inputemail input {
-  font-size: 20px;
-  @include inputstyle(500px,25px,3px,20px)
+ font-size: 20px;
+ @include inputstyle(500px,25px,3px,20px)
 }
 
 .inputaffair input {
-  font-size: 20px;
-  @include inputstyle(500px,25px,3px,20px)
+ font-size: 20px;
+ @include inputstyle(500px,25px,3px,20px)
 }
 
 .textareacomments textarea {
-    font-size: 20px;
-    @include inputstyle(500px,130px,3px,20px)
+   font-size: 20px;
+   @include inputstyle(500px,130px,3px,20px)
 }
 
 .botonsubmit input {
-    font-size: 20px;
-    @include inputstyle(70px,35px,3px,20px)
-    }
+   font-size: 20px;
+   @include inputstyle(70px,35px,3px,20px)
+   }
 
-    .labelname {
-      font-size: 30px;
-  }
-  
-  .labelapellido {
-      font-size: 30px;
-  }
-  
-  .labelemail {
-      font-size: 30px;
-  }
-  
-  .labelaffair {
-      font-size: 30px;
-  }
-  
-  .labelcomments {
-      font-size: 30px;
-  }
+   .labelname {
+     font-size: 30px;
+ }
+ 
+ .labelapellido {
+     font-size: 30px;
+ }
+ 
+ .labelemail {
+     font-size: 30px;
+ }
+ 
+ .labelaffair {
+     font-size: 30px;
+ }
+ 
+ .labelcomments {
+     font-size: 30px;
+ }
+
+
+/* BIG DEVICES*/
+
+@media only screen and (min-width: 1080px)  {
+
   
 
 }
 
 
 
-/* LARGE DEVICES*/
+/* MEDIUM DEVICES*/
 
+@media only screen and (min-width: 640px) and (max-width: 1079px) {
+
+ 
+}
 
 /* MOBILE VERSION */
 
@@ -985,19 +1047,39 @@ line-height: 15px;
     width: 80px;
   }
   ul li{
+    width: 70px;
     height: 50px ;
     background-color: salmon;
     list-style: none;
+    -webkit-box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.17);
+    -moz-box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.17);
+    box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.17);
+    @include positionrelative (-10px,0px,0px,-149px)
   }
   li{
+    padding: 15px;
+    padding-left: 25px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-family: "DK LEMON", "DK LEMON GITHUB";
     list-style: none;
-    font-family: "DK LEMON" ;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
   }
   a{
+  color: rgb(0, 0, 0);
     text-decoration: none;
   }
+  .logodesplegable{
+    width: 40px;
+    padding-left: 10px;
+
+  }
+}
+
+
+.letras {
+  font-family: "DK LEMON", "DK LEMON GITHUB";
 }
 
 
@@ -1049,13 +1131,9 @@ display: none;
     @include positionabsolut(560px,0px,291px,165px)
 }
 
-#SobremesaLogo img {
-    align-items: center;
-    width: 300px ;
-    @include positionrelative (289px,28.5px,140px,28.5px)
-}
 
-#PlatoConQueso img {
+
+#PlatoConQueso img { 
     width: 79px;
     @include positionabsolut(183px,282px,291px,29px)
     
