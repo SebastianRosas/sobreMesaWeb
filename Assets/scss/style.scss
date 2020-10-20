@@ -58,8 +58,9 @@ textarea {
 #homepage {
    
    flex-wrap: nowrap;
+   position: relative;
    display: grid;
-   height: 1080px;
+   height: 54.5vw;
    display: inline-block;
    width: 100%;
 
@@ -71,14 +72,12 @@ width: 100%;
    padding-top: 10px;
    font-family: "DK LEMON", "DK LEMON GITHUB";
    font-size: 30px;
-   align-items: center;
    display: flex;
    justify-content: space-between;
    align-items: center;
    position: fixed;
    top: 0px;
-   right: 0px;
-
+   right: 100px;
 }
 
 #opcionesmenunavbar a {
@@ -88,8 +87,7 @@ width: 100%;
 .PageHead img{
    width: 90px;
    align-items: center;
-   padding: 0px 100px ;
- 
+  
 }
 
 
@@ -152,21 +150,21 @@ text-decoration: none;
 #SobremesaLogo img {
   width: 65vw ;
   position: absolute;
-  top: 250px;
+  top: 14vw;
   left: 17vw;
 }
 
 #PlatoConQueso img {
   width: 8vw;
   position: relative;
-  top: 200px;
+  top: 13vw;
   left: 10vw;
 }
 
 #PlatoTenedorAmrillo img {
    width: 8vw;
    position: relative;
-   top: 450px; 
+   top: 30vw; 
    left: 82vw;
    
 }
@@ -174,29 +172,29 @@ text-decoration: none;
 #Roto img {
    width: 4vw;
    position: relative;
-   top: 380px ;
+   top: 23vw ;
    left: 13vw;
 }
 
 #Copa img {
    width: 12vw;
    position: relative;
-   top: 190px;
+   top: 12vw;
    left: 46vw;
    
 }
 
-#Cuchillo img {
+.cuchillohome img {
    width: 4vw;
     position: absolute;
-    top: 130px;
+    top: 9vw;
     left: 87vw;
 }
 
 #Tenedor img{
   width: 8vw;
   position: absolute;
-  top: 120px;
+  top: 9vw;
   left:  81vw;
 }
 
@@ -311,60 +309,60 @@ text-decoration: none;
    }
  }
 
- .shaketenedor:hover {
-   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-   transform: translate3d(0, 0, 0);
-   backface-visibility: hidden;
-   perspective: 1000px;
- }
+//  .shaketenedorparty:hover {
+//    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+//    transform: translate3d(0, 0, 0);
+//    backface-visibility: hidden;
+//    perspective: 1000px;
+//  }
  
- @keyframes shake {
-   10%, 90% {
-     transform: translate3d(-1px, 0, 0);
-   }
+//  @keyframes shake {
+//    10%, 90% {
+//      transform: translate3d(-1px, 0, 0);
+//    }
    
-   20%, 80% {
-     transform: translate3d(2px, 0, 0);
-   }
+//    20%, 80% {
+//      transform: translate3d(2px, 0, 0);
+//    }
  
-   30%, 50%, 70% {
-     transform: translate3d(-4px, 0, 0);
-   }
+//    30%, 50%, 70% {
+//      transform: translate3d(-4px, 0, 0);
+//    }
  
-   40%, 60% {
-     transform: translate3d(4px, 0, 0);
-   }
- }
+//    40%, 60% {
+//      transform: translate3d(4px, 0, 0);
+//    }
+//  }
 
- .shakecuchillo:hover {
-   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-   transform: translate3d(0, 0, 0);
-   backface-visibility: hidden;
-   perspective: 1000px;
- }
- 
- @keyframes shake {
-   10%, 90% {
-     transform: translate3d(-1px, 0, 0);
-   }
-   
-   20%, 80% {
-     transform: translate3d(2px, 0, 0);
-   }
- 
-   30%, 50%, 70% {
-     transform: translate3d(-4px, 0, 0);
-   }
- 
-   40%, 60% {
-     transform: translate3d(4px, 0, 0);
-   }
- }
+ .shakecuchi2:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 
 /* About */
 
 .AboutFondo {
-   height: 1080px;
+   height: 54.5vw;
    position: relative;
    display: inline-block;
    width: 100%;
@@ -376,23 +374,26 @@ text-decoration: none;
 .tituloabout h1 {
    font-size: 5vw;
    position: absolute;
-   top: 70vw;
-   left: 16vw;
+   top: 15vw;
+   left: 14vw;
 
 }
 
 .aboutdescription p {
-   font-size: 35px;
+   font-size: 2.7vh;
+   position: absolute;
+   top: 23vw;
+   left: 15.5vw;
+   line-height: 1.8vw;
    
-   @include positionabsolut(1660px,1078px,357px,319px)
 }
 
 
 #CartelitoAbout img {
    width: 30vw;
    position: absolute;
-   top: 20vw;
-   right: 70px;
+   top: 17vw;
+   left: 56vw;
 
 }
 
@@ -423,70 +424,91 @@ text-decoration: none;
 /* The Party */
 
 #thepartypage {
-   height: 1080px;
+   height: 54.5vw;
+   position: relative;
    display: inline-block;
    width: 100%;
 }
 
 
 .TituloTheParty {
-   font-size: 100px;
-   @include positionabsolut(2360px,854px,1067px,757px)
+   font-size: 4vw;
+   position: absolute;
+   top: 4vw;
+   left: 44vw;
 }
 
 .copatheparty {
-   width: 1010px;
-   @include positionabsolut(2100px,1293px,auto,auto)
+   width: 45vw;
+   position: absolute;
+   top: 1vw;
+  right: 69vw;
+  z-index: 15;
+   
 }
 
 .platosparty {
-   width: 767px;
-   @include positionabsolut(2570px,641px,904px,512px)
+   width: 35vw;
+   position: absolute;
+  top: 11.5vw;
+  left: 32.5vw;
 } 
 
 .cuchilloparty {
-   width: 70px;
-   @include positionrelative(160px,132px,901px,1667px)
+   width: 4vw;
+   position: absolute;
+   top: 9vw;
+   left: 87vw;
 }
 
 .tenedorparty {
-   width: 160px;
-   @include positionrelative(30px,190px,933px,1537px)
+   width: 8vw;
+   position: absolute;
+   top: 9vw;
+   left: 81vw;
 }
 
 .platoesquinaparty {
-   width: 439px;
-   @include positionrelative(300px,auto,auto,1450px)
+   width: 20vw;
+   position: absolute;
+   top: 33vw;
+   left: 78vw;
+  
 }
 
 .titulofotosparty {
-   font-size: 30px;
-   @include positionabsolut(2823px,1758px,773px,119px)
+   font-size: 1vw;
+  position: absolute;
 }
 
 #fotosparty img {
-   width: 150px;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   padding: 10px;
-   border-radius: 20px;
-   @include positionrelative(-200px,1218px,356px,92px)
+  display: none;
+  // position: absolute;
+  // top: 100px;
+  // left: 30vw;
+  //  width: 150px;
+  //  flex-wrap: wrap;
+  //  justify-content: space-between;
+  //  padding: 10px;
+  //  border-radius: 20px;
+   
 }
 
 .tituloflyersparty { 
-   font-size: 30px;
-   @include positionabsolut(3088px,300px,150px,1160px)
+   font-size:  3vw;
+   position: absolute;
 }
 
-#flyersparty img { 
-   width: 150px;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   border-radius: 20px;
-   @include positionrelative(-628px,188px,356px,1122px)
+#flyersparty img {
+  display: none; 
+  //  width: 150px;
+  //  flex-wrap: wrap;
+  //  justify-content: space-between;
+  //  border-radius: 20px;
+  //  @include positionrelative(-628px,188px,356px,1122px)
 }
 
-#shakecuchilloparty:hover {
+.shakecuchilloparty:hover {
    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
    transform: translate3d(0, 0, 0);
    backface-visibility: hidden;
@@ -511,7 +533,7 @@ text-decoration: none;
    }
  }
 
- #shaketenedorparty:hover {
+ .shaketenedorparty:hover {
    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
    transform: translate3d(0, 0, 0);
    backface-visibility: hidden;
@@ -539,93 +561,130 @@ text-decoration: none;
 /* Guests */
 
 #guestspage {
-   height: 1080px;
+  height:57vw;
+   position: relative;
    display: inline-block;
    width: 100%;
 }
 #gueststitulo {
    z-index: 2;
-   font-size: 100px;
-   @include positionabsolut(3872px,730px,757px,800px)
+   font-size: 2vw;
+   position: absolute;
+   top: 14vw;
+   left: 42vw;
+   
 }
 
 .Botella img {
    z-index: 1;
-   width: 1050px;
-   @include positionabsolut(3613px,653px,0px,0px)
+   width: 54vw;
+   position: absolute;
+   
 }
 
 .ethel {
-   width: 160px;
-   @include positionabsolut(3870px,408px,788px,1228px)
+   width: 9vw;
+   position: absolute;
+   top: 9vw;
+   left: 57vw;
+   
 }
 
 .georgiooniani {
-   width: 154px;
-   @include positionabsolut(4100px,124px,608px,1642px)
+   width: 7vw;
+    position: absolute;
+    top: 14vw;
+    left: 88vw;
+   
 }
 
 .hugie {
-   width: 166px;
-   @include positionabsolut(4600px,342px,71px,1288px)
+   width: 8vw;
+   position: absolute;
+   top: 29vw;
+   left: 70vw;
 }
 
 .mayell {
-   width: 143px;
-   @include positionabsolut(4020px,243px,523px,1382px)
+   width: 8vw;
+   position: absolute;
+   top: 28vw;
+   left: 55vw;
 }
 
 .mrmurray {
-   width: 163px;
-   @include positionabsolut(4460px,588px,91px,1000px)
+   width: 8vw;
+   position: absolute;
+   top: 39vw;
+   left: 86vw;
 }
 
 .oswaldo {
-   width: 206px;
-   @include positionabsolut(4320px,124px,238px,1590px)
-}
+   width: 8vw;
+  position: absolute;
+  top: 18vw;
+  left: 73vw;
+  }
 
 .quest {
-   width: 113px;
-   @include positionabsolut(4420px,327px,285px,1300px)
-}
+   width: 6vw;
+    position: absolute;
+    top: 40vw;
+    left: 55vw;
+  }
 
 .sugarfree {
-   width: 119px;
-   @include positionabsolut(4250px,485px,367px,1130px)
-}
+   width: 6vw;
+    position: absolute;
+    top: 43vw;
+    left: 72vw;
+  }
 
 .timkern {
-   width: 106px;
-   @include positionabsolut(3900px,170px,748px,1520px)
-}
+   width: 5vw;
+    position: absolute;
+    top: 24vw;
+    left: 88vw;
+  }
 
 .tzena {
-   width: 101px;
-   @include positionabsolut(4520px,209px,90px,1600px)
-} 
+   width: 5vw;
+    position: absolute;
+    top: 11vw;
+    left: 75vw;
+  } 
 
 .cuchilloguests img {
    z-index: 3;
-   width: 54px;
-   @include positionabsolut(4125px,966px,415px,710px)
+   width: 3vw;
+   position: absolute;
+   top: 26.5vw;
+   left: 36.5vw;
+   
 }
 
 .tenedorguests {
    z-index: 4;
-   width: 60px;
-   @include positionabsolut(4320px,979px,290px,540px)
+   width: 10vw;
+   position: absolute;
+   top: 36vw;
+   left: 27vw;
+   
 }
 
 .plato2guests img{
-   width: 130px;
-   @include positionabsolut(4220px,262px,389px,1400px)
-}
+   width: 7vw;
+    position: absolute;
+    top: 18vw;
+    left: 60vw;
+  }
 
 .quesoguests img {
-   width: 156px;
-   @include positionabsolut(4020px,513px,1100px,546px)
-}
+   width: 7vw;
+  position: absolute;
+  top: 32vw;
+  left: 80vw;
+  }
 
 #shakeethel:hover {
    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
@@ -906,114 +965,104 @@ text-decoration: none;
 
 .contactofondo {
    display: inline-block;
-   height: 1080px;
+   height: 54.5vw;
+   position: relative;
    width: 100%;
    background-image: url("../../images/Contact/FondoContact.png");
-background-size: cover;
+   background-size: 100%;
+   background-repeat: no-repeat;
 
 }
 
 .tituloformulario h1 {
-   font-size: 100px;
-   @include positionabsolut(4870px,758px,806px,758px)
+   font-size: 4vw;
+   position: absolute;
+   top: 2vw;
+   left: 42vw;
+
 }
 
 .quesocontact img {
-   width: 192px ;
-   @include positionabsolut(5100px,1466px,716px,262px)
+   display: none;
 }
 
 .sobremesalogocontact img {
-   width: 317px;
-   @include positionabsolut(5160px,140px,494px,1420px)
+   display: none;
 }
 
 
 .instagramlogofooter img{
-   width: 40px;
-   @include positionabsolut(5730px,360px,45px,1520px)
+   width: 1.8vw;
+   position: absolute;
+   top: 48.1vw;
+   left: 88vw;
 }
 
 .facebooklogofooter img {
-   width: 43px;
-   @include positionabsolut(5725px,297px,39px,1572px)
+   width: 2vw;
+   position: absolute;
+   top: 48vw;
+   left: 85vw;
+   
 }
 
 #formulariocontact {
-   display: flex;
-flex-direction: column;
-align-items: center;
-line-height: 15px;
-@include positionabsolut(5100px,538px,190px,538px)
+line-height: 1vw;
+position: absolute;
+top: 10vw;
+left: 37vw;
 }
 
 .inputname input{
- font-size: 20px;
- @include inputstyle(500px,25px,3px,20px)
+ font-size: 1vw;
+ @include inputstyle(26vw,1.5vw,3px,20px)
 }
 
 .inputapellido input{
-   font-size: 20px;
-   @include inputstyle(500px,25px,3px,20px)
+  font-size: 1vw;
+  @include inputstyle(26vw,1.5vw,3px,20px)
 }
 
 .inputemail input {
- font-size: 20px;
- @include inputstyle(500px,25px,3px,20px)
+  font-size: 1vw;
+  @include inputstyle(26vw,1.5vw,3px,20px)
 }
 
 .inputaffair input {
- font-size: 20px;
- @include inputstyle(500px,25px,3px,20px)
+  font-size: 1vw;
+  @include inputstyle(26vw,1.5vw,3px,20px)
 }
 
 .textareacomments textarea {
-   font-size: 20px;
-   @include inputstyle(500px,130px,3px,20px)
+   font-size: 1vw;
+   @include inputstyle(26vw,8vw,3px,20px)
 }
 
 .botonsubmit input {
-   font-size: 20px;
-   @include inputstyle(70px,35px,3px,20px)
+   font-size: 1vw;
+   @include inputstyle(4vw,2vw,3px,20px)
    }
 
    .labelname {
-     font-size: 30px;
+     font-size: 1.6vw;
  }
  
  .labelapellido {
-     font-size: 30px;
+  font-size: 1.6vw;
  }
  
  .labelemail {
-     font-size: 30px;
+  font-size: 1.6vw;
  }
  
  .labelaffair {
-     font-size: 30px;
+  font-size: 1.6vw;
  }
  
  .labelcomments {
-     font-size: 30px;
+  font-size: 1.6vw;
  }
 
-
-/* BIG DEVICES*/
-
-@media only screen and (min-width: 1080px)  {
-
-  
-
-}
-
-
-
-/* MEDIUM DEVICES*/
-
-@media only screen and (min-width: 640px) and (max-width: 1079px) {
-
- 
-}
 
 /* MOBILE VERSION */
 
@@ -1292,6 +1341,7 @@ display: none;
 #guestspage {
     height: 640px;
     display: inline-block;
+    position: relative;
     width: 100%;
 }
 #gueststitulo {
