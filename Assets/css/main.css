@@ -46,10 +46,10 @@ textarea {
 
 .PageHead {
   width: 100%;
-  z-index: 100;
+  z-index: 1000000;
   padding-top: 10px;
   font-family: "DK LEMON", "DK LEMON GITHUB";
-  font-size: 30px;
+  font-size: 1.7vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,10 +58,10 @@ textarea {
   right: 100px; }
 
 #opcionesmenunavbar a {
-  padding: 20px; }
+  padding: 15px; }
 
 .PageHead img {
-  width: 90px;
+  width: 5vw;
   align-items: center; }
 
 .Home {
@@ -99,13 +99,13 @@ textarea {
 .hovercontactmenu:hover {
   color: #ff5959; }
 
-#swipeuplogo img {
+.swipeuplogo {
   display: none; }
 
 #botonmenudesplegable img {
   display: none; }
 
-#SobremesaLogo img {
+.SobremesaLogo img {
   width: 65vw;
   position: absolute;
   top: 14vw;
@@ -253,11 +253,11 @@ textarea {
   left: 14vw; }
 
 .aboutdescription p {
-  font-size: 2.7vh;
+  font-size: 1.4vw;
   position: absolute;
   top: 23vw;
-  left: 15.5vw;
-  line-height: 1.8vw; }
+  left: 14.5vw;
+  line-height: 1.7vw; }
 
 #CartelitoAbout img {
   width: 30vw;
@@ -324,18 +324,96 @@ textarea {
   left: 78vw; }
 
 .titulofotosparty {
-  font-size: 1vw;
-  position: absolute; }
-
-#fotosparty img {
-  display: none; }
+  font-size: 1.7vw;
+  position: absolute;
+  top: 23vw;
+  left: 34.5vw; }
 
 .tituloflyersparty {
-  font-size: 3vw;
-  position: absolute; }
+  font-size: 1.7vw;
+  position: absolute;
+  top: 42vw;
+  left: 60.5vw; }
 
-#flyersparty img {
-  display: none; }
+#photos {
+  position: absolute;
+  top: 27vw;
+  left: 7vw;
+  z-index: 1000;
+  opacity: 100%; }
+
+#photos img {
+  width: 10vw;
+  float: left;
+  display: block;
+  margin: 2px;
+  border-radius: 2px; }
+
+#overlay {
+  z-index: 10001;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center; }
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px; }
+
+#photos {
+  width: 35vw; }
+
+#photo-gallery {
+  width: 100%; }
+
+#Flyers {
+  position: absolute;
+  top: 22vw;
+  left: 60vw;
+  z-index: 1000;
+  opacity: 100%; }
+
+#Flyers img {
+  width: 10vw;
+  float: left;
+  display: block;
+  margin: 2px;
+  border-radius: 2px; }
+
+#overlay2 {
+  z-index: 10001;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center; }
+
+#overlay2 img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px; }
+
+#Flyers {
+  width: 35vw; }
+
+#Flyers-gallery {
+  width: 100%; }
+
+.flyernextgig {
+  position: absolute;
+  top: 25vw;
+  left: 70vw; }
+  .flyernextgig img {
+    width: 20vw;
+    border-radius: 5px; }
 
 .shakecuchilloparty:hover {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -766,24 +844,30 @@ textarea {
   font-size: 1.6vw; }
 
 /* MOBILE VERSION */
-@media only screen and (min-width: 0px) and (max-width: 639px) {
+@media only screen and (min-width: 0px) and (max-width: 640px) {
   /* Home Mobile */
   #logonavbar a {
     display: none; }
   #homepage {
     flex-wrap: nowrap;
-    display: grid;
     height: 640px;
+    position: relative;
     display: inline-block;
     width: 100%; }
+  #botonmenumobile {
+    display: block; }
   #menudesplegable {
     position: absolute;
+    z-index: 50;
     top: 0px;
     right: 0px;
     bottom: 0px;
-    left: 220px; }
-    #menudesplegable img {
-      width: 80px; }
+    left: 175px; }
+    #menudesplegable #botonmenumobile {
+      width: 90px;
+      position: absolute;
+      top: 5px;
+      left: 55px; }
     #menudesplegable ul li {
       width: 70px;
       height: 50px;
@@ -793,7 +877,7 @@ textarea {
       -moz-box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.17);
       box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.17);
       position: relative;
-      top: -10px;
+      top: 130px;
       right: 0px;
       bottom: 0px;
       left: -149px; }
@@ -816,8 +900,6 @@ textarea {
     font-family: "DK LEMON", "DK LEMON GITHUB"; }
   .menumobile.visible {
     display: block; }
-  .menumobile {
-    display: none; }
   .PageHead {
     display: none; }
   #opcionesmenunavbar a {
@@ -834,55 +916,55 @@ textarea {
     display: none; }
   .ContactMenu {
     display: none; }
-  #swipeuplogo img {
-    width: 35px;
+  .SobremesaLogo img {
+    width: 73vw;
     position: absolute;
-    top: 560px;
-    right: 0px;
-    bottom: 291px;
-    left: 165px; }
+    top: 290px;
+    right: none;
+    bottom: none;
+    left: 37px; }
   #PlatoConQueso img {
     width: 79px;
     position: absolute;
     top: 183px;
-    right: 282px;
-    bottom: 291px;
-    left: 29px; }
+    right: none;
+    bottom: none;
+    left: 15px; }
   #PlatoTenedorAmrillo img {
     width: 70px;
     position: absolute;
     top: 486px;
-    right: 36px;
-    bottom: 0px;
-    left: 260px; }
+    right: none;
+    bottom: none;
+    left: 237px; }
   #Roto img {
     width: 44px;
     position: absolute;
     top: 450px;
-    right: 302px;
-    bottom: 0px;
-    left: 44px; }
+    right: none;
+    bottom: none;
+    left: 30px; }
   #Copa img {
     width: 115px;
     position: absolute;
     top: 414px;
     right: 122px;
     bottom: 0px;
-    left: 122px; }
+    left: 120px; }
   #Cuchillo img {
     width: 35px;
     position: absolute;
     top: 210px;
     right: 36px;
     bottom: 0px;
-    left: 295px; }
+    left: 280px; }
   #Tenedor img {
     width: 76px;
     position: absolute;
     top: 206px;
     right: 47px;
     bottom: 0px;
-    left: 230px; }
+    left: 220px; }
   #logonavbar {
     display: none; }
   #opcionesmenunavbar {
@@ -891,31 +973,33 @@ textarea {
   .AboutFondo {
     height: 640px;
     display: inline-block;
+    position: relative;
     width: 100%;
     background-image: url("../../images/About/Fondoaboutmobile.png");
     background-size: cover; }
   .tituloabout h1 {
     font-size: 50px;
     position: absolute;
-    top: 700px;
-    right: auto;
-    bottom: 57px;
-    left: 50px; }
-  .aboutdescription article p {
-    font-size: 17px;
+    top: 60px;
+    right: none;
+    bottom: none;
+    left: 28px; }
+  .aboutdescription p {
+    font-size: 16px;
     justify-content: space-between;
+    line-height: 22px;
     position: absolute;
-    top: 1100px;
-    right: auto;
-    bottom: 57px;
-    left: 40px; }
+    top: 450px;
+    right: none;
+    bottom: none;
+    left: 20px; }
   #CartelitoAbout img {
     width: 303px;
     position: absolute;
     top: 200px;
-    right: auto;
-    bottom: 431px;
-    left: 25px; }
+    right: none;
+    bottom: none;
+    left: 17px; }
   .cartelitomovimiento {
     animation: shake 1s;
     animation-iteration-count: infinite; }
@@ -932,74 +1016,116 @@ textarea {
   #thepartypage {
     height: 640px;
     display: inline-block;
+    position: relative;
+    width: 100%; }
+  #photos {
+    position: absolute;
+    top: 370px;
+    left: 10px;
+    z-index: 1000;
+    opacity: 100%; }
+  #photos img {
+    width: 70px;
+    float: left;
+    display: block;
+    margin: 2px;
+    border-radius: 2px; }
+  #overlay {
+    z-index: 10001;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center; }
+  #overlay img {
+    margin: 35% auto 0;
+    width: 300px;
+    border-radius: 2px; }
+  #photos {
+    width: 200px; }
+  #photo-gallery {
+    width: 100%; }
+  #Flyers {
+    position: absolute;
+    top: 160px;
+    left: 170px;
+    z-index: 1000;
+    opacity: 100%; }
+  #Flyers img {
+    width: 70px;
+    float: left;
+    display: block;
+    margin: 2px;
+    border-radius: 2px; }
+  #overlay2 {
+    z-index: 10001;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center; }
+  #overlay2 img {
+    margin: 10%  auto 0;
+    width: 550px;
+    border-radius: 5px; }
+  #Flyers {
+    width: 200px; }
+  #Flyers-gallery {
     width: 100%; }
   .TituloTheParty {
-    font-size: 50px;
+    font-size: 45px;
     position: absolute;
-    top: 1300px;
-    right: auto;
-    bottom: 57px;
+    top: 0px;
+    right: none;
+    bottom: none;
     left: 100px; }
   .copatheparty {
-    width: 380px;
+    z-index: 1;
+    width: 340px;
     position: absolute;
-    top: 1400px;
+    top: 100px;
     right: 0px;
     bottom: auto;
     left: -135px; }
   .platosparty {
-    width: 310px;
+    width: 290px;
     position: absolute;
-    top: 1400px;
-    right: 33px;
-    bottom: 671px;
-    left: 25px; }
+    top: 95px;
+    right: none;
+    bottom: none;
+    left: 18px; }
   .cuchilloparty {
     display: none; }
   .tenedorparty {
     display: none; }
   .platoesquinaparty {
-    width: 260px;
+    z-index: 2;
+    width: 240px;
     position: relative;
-    top: 500px;
-    right: auto;
-    bottom: auto;
-    left: 90px; }
+    top: 450px;
+    right: none;
+    bottom: none;
+    left: 80px; }
   .titulofotosparty {
     font-size: 17px;
     position: absolute;
-    top: 1455px;
-    right: auto;
-    bottom: 57px;
-    left: 90px; }
-  #fotosparty img {
-    width: 70px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-    border-radius: 15px;
-    position: relative;
-    top: -70px;
-    right: auto;
-    bottom: auto;
-    left: 70px; }
+    top: 330px;
+    right: none;
+    bottom: none;
+    left: 16px; }
   .tituloflyersparty {
     font-size: 17px;
     position: absolute;
-    top: 1857px;
-    right: auto;
-    bottom: 57px;
-    left: 17px; }
-  #flyersparty img {
-    width: 70px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-    position: relative;
-    top: -50px;
-    right: auto;
-    bottom: auto;
-    left: 0px; }
+    top: 372px;
+    right: none;
+    bottom: none;
+    left: 280px; }
   /* Guests */
   #guestspage {
     height: 640px;
@@ -1008,174 +1134,168 @@ textarea {
     width: 100%; }
   #gueststitulo {
     z-index: 2;
-    font-size: 40px;
+    font-size: 23px;
     position: absolute;
-    top: 1965px;
-    right: auto;
-    bottom: 57px;
-    left: 17px; }
+    top: 0px;
+    right: none;
+    bottom: none;
+    left: 10px; }
   .Botella img {
     z-index: 1;
-    width: 350px;
+    width: 330px;
     position: absolute;
-    top: 2208px;
-    right: 0px;
-    bottom: 0px;
+    top: 258px;
+    right: none;
+    bottom: none;
     left: 0px; }
   .ethel {
     width: 60px;
     position: absolute;
-    top: 2100px;
-    right: auto;
-    bottom: 57px;
-    left: 17px; }
+    top: 170px;
+    right: none;
+    bottom: none;
+    left: 16px; }
   .georgiooniani {
     width: 60px;
     position: absolute;
-    top: 2050px;
-    right: auto;
-    bottom: 57px;
-    left: 100px; }
+    top: 120px;
+    right: none;
+    bottom: none;
+    left: 90px; }
   .hugie {
     width: 70px;
     position: absolute;
-    top: 2300px;
-    right: auto;
-    bottom: 57px;
-    left: 20px; }
+    top: 340px;
+    right: none;
+    bottom: none;
+    left: 10px; }
   .mayell {
     width: 62px;
     position: absolute;
-    top: 2150px;
-    right: auto;
-    bottom: 57px;
-    left: 100px; }
+    top: 240px;
+    right: none;
+    bottom: none;
+    left: 90px; }
   .mrmurray {
     width: 60px;
+    transform: rotate(-30deg);
     position: absolute;
-    top: 2090px;
-    right: auto;
-    bottom: 57px;
-    left: 175px; }
+    top: 210px;
+    right: none;
+    bottom: none;
+    left: 165px; }
   .oswaldo {
     width: 70px;
     position: absolute;
-    top: 2060px;
-    right: auto;
-    bottom: 57px;
-    left: 230px; }
+    top: 150px;
+    right: none;
+    bottom: none;
+    left: 220px; }
   .quest {
     width: 60px;
     position: absolute;
-    top: 2165px;
-    right: auto;
-    bottom: 57px;
-    left: 280px; }
+    top: 210px;
+    right: none;
+    bottom: none;
+    left: 260px; }
   .sugarfree {
     width: 45px;
     position: absolute;
-    top: 2110px;
-    right: auto;
-    bottom: 57px;
-    left: 290px; }
+    top: 90px;
+    right: none;
+    bottom: none;
+    left: 280px; }
   .timkern {
     width: 50px;
     position: absolute;
-    top: 2220px;
-    right: auto;
-    bottom: 57px;
-    left: 20px; }
+    top: 260px;
+    right: none;
+    bottom: none;
+    left: 10px; }
   .tzena {
     width: 60px;
     transform: rotate(-20deg);
     position: absolute;
-    top: 2240px;
-    right: auto;
-    bottom: 57px;
-    left: 110px; }
+    top: 80px;
+    right: none;
+    bottom: none;
+    left: 170px; }
   .cuchilloguests img {
     z-index: 3;
-    width: 29px;
+    width: 24px;
     position: absolute;
-    top: 2380px;
+    top: 400px;
     right: 0px;
     bottom: 0px;
-    left: 238px; }
-  .tenedorguests img {
+    left: 220px; }
+  .tenedorguests {
     z-index: 4;
-    width: 100px;
+    width: 80px;
     position: absolute;
-    top: 2460px;
-    right: 0px;
-    bottom: 0px;
-    left: 150px; }
+    top: 500px;
+    right: none;
+    bottom: none;
+    left: 140px; }
   .plato2guests img {
     width: 50px;
     position: absolute;
-    top: 2165px;
-    right: auto;
-    bottom: 57px;
-    left: 190px; }
+    top: 175px;
+    right: none;
+    bottom: none;
+    left: 130px; }
   .quesoguests img {
     width: 48px;
     position: absolute;
-    top: 2150px;
+    top: 100px;
     right: auto;
     bottom: 57px;
-    left: 30px; }
+    left: 20px; }
   /* Contact */
+  .contactofondo {
+    background: none; }
   .fondofomulario {
     height: 640px;
     display: inline-block;
+    position: relative;
     width: 100%;
     background-image: url("../../images/Contact/fondomobilecontact.png");
-    background-size: cover; }
+    background-size: cover;
+    background-repeat: no-repeat; }
   .tituloformulario h1 {
     font-size: 50px;
     position: absolute;
-    top: 2570px;
-    right: auto;
-    bottom: 57px;
-    left: 85px; }
+    top: 50px;
+    right: none;
+    bottom: none;
+    left: 80px; }
   .quesocontact img {
-    width: 100px;
-    position: absolute;
-    top: 2990px;
-    right: auto;
-    bottom: 57px;
-    left: -69px; }
+    display: none; }
   .sobremesalogocontact img {
-    width: 100px;
-    transform: rotate(50deg);
-    position: absolute;
-    top: 2670px;
-    right: auto;
-    bottom: 57px;
-    left: 250px; }
+    display: none; }
   .instagramlogofooter img {
     width: 25px;
     position: absolute;
-    top: 3153px;
-    right: auto;
-    bottom: 57px;
-    left: 270px; }
+    top: 580px;
+    right: none;
+    bottom: none;
+    left: 250px; }
   .facebooklogofooter img {
     width: 27px;
     position: absolute;
-    top: 3151px;
-    right: auto;
-    bottom: 57px;
-    left: 304px; }
-  .formulariomobile {
+    top: 578px;
+    right: none;
+    bottom: none;
+    left: 287px; }
+  #formulariocontact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 12px;
+    line-height: 8px;
     position: absolute;
-    top: 2680px;
-    right: 68px;
-    bottom: 128px;
-    left: 52px; }
+    top: 175px;
+    right: none;
+    bottom: none;
+    left: 95px; }
   #inputnamemobile input {
     width: 150px;
     height: 15px;
@@ -1217,6 +1337,9 @@ textarea {
     color: black;
     background: none; }
   #botonsubmitmobile input {
+    display: flex;
+    align-self: center;
+    font-size: 15px;
     width: 50px;
     height: 25px;
     border-width: 3px;

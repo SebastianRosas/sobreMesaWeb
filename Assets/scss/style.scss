@@ -68,10 +68,10 @@ textarea {
 
 .PageHead {
 width: 100%;
-   z-index: 100;
+   z-index: 1000000;
    padding-top: 10px;
    font-family: "DK LEMON", "DK LEMON GITHUB";
-   font-size: 30px;
+   font-size: 1.7vw;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -81,11 +81,11 @@ width: 100%;
 }
 
 #opcionesmenunavbar a {
-   padding: 20px;
+   padding: 15px;
 }
 
 .PageHead img{
-   width: 90px;
+   width: 5vw;
    align-items: center;
   
 }
@@ -138,7 +138,7 @@ text-decoration: none;
  color: rgb(255, 89, 89);
 }
 
-#swipeuplogo img {
+.swipeuplogo {
    display: none;
 }
 
@@ -147,7 +147,7 @@ text-decoration: none;
 }
 
 
-#SobremesaLogo img {
+.SobremesaLogo img {
   width: 65vw ;
   position: absolute;
   top: 14vw;
@@ -380,11 +380,11 @@ text-decoration: none;
 }
 
 .aboutdescription p {
-   font-size: 2.7vh;
+   font-size: 1.4vw;
    position: absolute;
    top: 23vw;
-   left: 15.5vw;
-   line-height: 1.8vw;
+   left: 14.5vw;
+   line-height: 1.7vw;
    
 }
 
@@ -477,35 +477,125 @@ text-decoration: none;
 }
 
 .titulofotosparty {
-   font-size: 1vw;
+   font-size: 1.7vw;
   position: absolute;
-}
-
-#fotosparty img {
-  display: none;
-  // position: absolute;
-  // top: 100px;
-  // left: 30vw;
-  //  width: 150px;
-  //  flex-wrap: wrap;
-  //  justify-content: space-between;
-  //  padding: 10px;
-  //  border-radius: 20px;
-   
+  top: 23vw;
+  left: 34.5vw;
 }
 
 .tituloflyersparty { 
-   font-size:  3vw;
-   position: absolute;
+  font-size: 1.7vw;
+  position: absolute;
+  top: 42vw;
+  left: 60.5vw;
+  
 }
 
-#flyersparty img {
-  display: none; 
-  //  width: 150px;
-  //  flex-wrap: wrap;
-  //  justify-content: space-between;
-  //  border-radius: 20px;
-  //  @include positionrelative(-628px,188px,356px,1122px)
+
+// PRUEBA GALERIA FOTOS
+
+#photos {
+  position: absolute;
+  top: 27vw;
+  left: 7vw;
+  z-index: 1000;
+  opacity: 100%;
+}
+
+#photos img {
+  width: 10vw;
+  float: left;
+  display: block;
+  margin: 2px;
+  border-radius: 2px;
+}
+
+
+#overlay {
+  z-index: 10001;
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#photos {
+  width: 35vw;
+}
+
+#photo-gallery {
+  width: 100%;
+}
+
+// 
+
+// PRUEBA GALERIA DE FLYERS
+
+#Flyers {
+  position: absolute;
+  top: 22vw;
+  left: 60vw;
+  z-index: 1000;
+  opacity: 100%;
+}
+
+#Flyers img {
+  width: 10vw;
+  float: left;
+  display: block;
+  margin: 2px;
+  border-radius: 2px;
+}
+
+
+#overlay2 {
+  z-index: 10001;
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay2 img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#Flyers {
+  width: 35vw;
+}
+
+#Flyers-gallery {
+  width: 100%;
+}
+
+// 
+
+
+.flyernextgig {
+ position: absolute;
+ top: 25vw;
+ left: 70vw;
+
+  img{
+    width: 20vw;
+    border-radius: 5px;
+  }
 }
 
 .shakecuchilloparty:hover {
@@ -1067,7 +1157,7 @@ left: 37vw;
 /* MOBILE VERSION */
 
 
- @media only screen and (min-width: 0px) and (max-width: 639px) {
+ @media only screen and (min-width: 0px) and (max-width: 640px) {
 
     /* Home Mobile */
 
@@ -1078,22 +1168,29 @@ left: 37vw;
 #homepage {
     
     flex-wrap: nowrap;
-    display: grid;
     height: 640px;
+    position: relative;
     display: inline-block;
     width: 100%;
 
 }
 
+#botonmenumobile {
+  display: block;
+}
+
 #menudesplegable{
   position: absolute;
+  z-index: 50;
   top: 0px;
   right:0px ;
   bottom: 0px;
-  left: 220px;
-  img {
-
-    width: 80px;
+  left: 175px;
+  #botonmenumobile {
+    width: 90px;
+    position: absolute;
+    top: 5px;
+    left: 55px;
   }
   ul li{
     width: 70px;
@@ -1103,7 +1200,7 @@ left: 37vw;
     -webkit-box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.17);
     -moz-box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.17);
     box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.17);
-    @include positionrelative (-10px,0px,0px,-149px)
+    @include positionrelative (130px,0px,0px,-149px)
   }
   li{
     padding: 15px;
@@ -1122,7 +1219,6 @@ left: 37vw;
   .logodesplegable{
     width: 40px;
     padding-left: 10px;
-
   }
 }
 
@@ -1136,9 +1232,7 @@ left: 37vw;
 .menumobile.visible {
   display: block;
 }
-.menumobile{
-  display: none;
-}
+
 
 .PageHead {
   display: none;
@@ -1174,43 +1268,41 @@ display: none;
     display: none;
 }
 
-
-#swipeuplogo img {
-    width: 35px;
-    @include positionabsolut(560px,0px,291px,165px)
+.SobremesaLogo img{
+  width: 73vw;
+  @include positionabsolut(290px,none,none,37px)
 }
-
 
 
 #PlatoConQueso img { 
     width: 79px;
-    @include positionabsolut(183px,282px,291px,29px)
+    @include positionabsolut(183px,none,none,15px)
     
 }
 
 #PlatoTenedorAmrillo img {
     width: 70px ;
-    @include positionabsolut(486px,36px,0px,260px)
+    @include positionabsolut(486px,none,none,237px)
 }
 
 #Roto img {
     width: 44px;
-    @include positionabsolut(450px,302px,0px,44px)
+    @include positionabsolut(450px,none,none,30px)
 }
 
 #Copa img {
     width: 115px;
-    @include positionabsolut(414px,122px,0px,122px)
+    @include positionabsolut(414px,122px,0px,120px)
 }
 
 #Cuchillo img {
     width: 35px;
-    @include positionabsolut(210px,36px,0px,295px)
+    @include positionabsolut(210px,36px,0px,280px)
 }
 
 #Tenedor img{
     width: 76px;
-    @include positionabsolut(206px,47px,0px,230px)
+    @include positionabsolut(206px,47px,0px,220px)
 }
 
 #logonavbar {
@@ -1226,6 +1318,7 @@ display: none;
 .AboutFondo {
     height: 640px;
     display: inline-block;
+    position: relative;
     width: 100%;
     background-image: url("../../images/About/Fondoaboutmobile.png");
     background-size: cover;
@@ -1233,19 +1326,20 @@ display: none;
 
 .tituloabout h1 {
     font-size: 50px;
-    @include positionabsolut(700px,auto,57px,50px)
+    @include positionabsolut(60px,none,none,28px)
 }
 
-.aboutdescription article p {
-    font-size: 17px;
+.aboutdescription p {
+    font-size: 16px; 
     justify-content: space-between;
-    @include positionabsolut(1100px,auto,57px,40px)
+    line-height: 22px;
+    @include positionabsolut(450px,none,none,20px)
     }
 
 
 #CartelitoAbout img {
     width: 303px;
-    @include positionabsolut(200px,auto,431px,25px)
+    @include positionabsolut(200px,none,none,17px)
 }
 
 .cartelitomovimiento{
@@ -1277,23 +1371,120 @@ display: none;
 #thepartypage {
     height: 640px;
     display: inline-block;
+    position: relative;
     width: 100%;
 }
 
+// PRUEBA GALERIA FOTOS
+
+#photos {
+  position: absolute;
+  top: 370px;
+  left: 10px;
+  z-index: 1000;
+  opacity: 100%;
+}
+
+#photos img {
+  width: 70px;
+  float: left;
+  display: block;
+  margin: 2px;
+  border-radius: 2px;
+}
+
+
+#overlay {
+  z-index: 10001;
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+  margin: 35% auto 0;
+  width: 300px;
+  border-radius: 2px;
+}
+
+#photos {
+  width: 200px
+}
+
+#photo-gallery {
+  width: 100%;
+}
+
+// 
+
+// PRUEBA GALERIA DE FLYERS
+
+#Flyers {
+  position: absolute;
+  top: 160px;
+  left: 170px;
+  z-index: 1000;
+  opacity: 100%;
+}
+
+#Flyers img {
+  width: 70px;
+  float: left;
+  display: block;
+  margin: 2px;
+  border-radius: 2px;
+}
+
+
+#overlay2 {
+  z-index: 10001;
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+#overlay2 img {
+  margin: 10% 
+  auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#Flyers {
+  width: 200px;
+}
+
+#Flyers-gallery {
+  width: 100%;
+}
+
+// 
+
 
 .TituloTheParty {
-    font-size: 50px;
-    @include positionabsolut(1300px,auto,57px,100px)
+    font-size: 45px;
+    @include positionabsolut(0px,none,none,100px)
 }
 
 .copatheparty {
-    width: 380px;
-    @include positionabsolut(1400px,0px,auto,-135px)
+  z-index: 1;
+    width: 340px;
+    @include positionabsolut(100px,0px,auto,-135px)
 }   
 
 .platosparty {
-    width: 310px;
-    @include positionabsolut(1400px,33px,671px,25px)
+    width: 290px;
+    @include positionabsolut(95px,none,none,18px)
 } 
 
 .cuchilloparty {
@@ -1305,36 +1496,21 @@ display: none;
 }
 
 .platoesquinaparty {
-    width: 260px;
-    @include positionrelative(500px,auto,auto,90px)
+  z-index: 2;
+    width: 240px;
+    @include positionrelative(450px,none,none,80px)
 }
 
 .titulofotosparty {
     font-size: 17px;
-    @include positionabsolut(1455px,auto,57px,90px)
-}
-
-#fotosparty img {
-    width: 70px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-    border-radius: 15px;
-    @include positionrelative(-70px,auto,auto,70px)
+    @include positionabsolut(330px,none,none,16px)
 }
 
 .tituloflyersparty { 
     font-size: 17px;
-    @include positionabsolut(1857px,auto,57px,17px)
+    @include positionabsolut(372px,none,none,280px)
 }
 
-#flyersparty img {
-    width: 70px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-    @include positionrelative(-50px,auto,auto,0px)
-}
 
 /* Guests */
 
@@ -1346,131 +1522,138 @@ display: none;
 }
 #gueststitulo {
     z-index: 2;
-    font-size: 40px;
-    @include positionabsolut(1965px,auto,57px,17px)
+    font-size: 23px;
+    @include positionabsolut(0px,none,none,10px)
 }
 
 .Botella img {
     z-index: 1;
-    width: 350px;
-    @include positionabsolut(2208px,0px,0px,0px)
+    width: 330px;
+    @include positionabsolut(258px,none,none,0px)
 }
 
 .ethel {
     width: 60px;
-    @include positionabsolut(2100px,auto,57px,17px)
+    @include positionabsolut(170px,none,none,16px)
 }
 
 .georgiooniani {
     width: 60px;
-    @include positionabsolut(2050px,auto,57px,100px)
+    @include positionabsolut(120px,none,none,90px)
 }
 
 .hugie {
     width: 70px;
-    @include positionabsolut(2300px,auto,57px,20px)
+    @include positionabsolut(340px,none,none,10px)
 }
 
 
 .mayell {
     width: 62px;
-    @include positionabsolut(2150px,auto,57px,100px)
+    @include positionabsolut(240px,none,none,90px)
 }
 
 .mrmurray {
     width: 60px;
-    @include positionabsolut(2090px,auto,57px,175px)
+    transform: rotate(-30deg);
+    @include positionabsolut(210px,none,none,165px)
 }
 
 .oswaldo {
     width: 70px;
-    @include positionabsolut(2060px,auto,57px,230px)
+    @include positionabsolut(150px,none,none,220px)
 }
 
 .quest {
     width: 60px;
-    @include positionabsolut(2165px,auto,57px,280px)
+    @include positionabsolut(210px,none,none,260px)
 }
 
 .sugarfree {
     width: 45px;
-    @include positionabsolut(2110px,auto,57px,290px)
+    @include positionabsolut(90px,none,none,280px)
 }
 
 .timkern {
     width: 50px;
-    @include positionabsolut(2220px,auto,57px,20px)
+    @include positionabsolut(260px,none,none,10px)
 }
 
 .tzena {
     width: 60px;
     transform: rotate(-20deg);
-    @include positionabsolut(2240px,auto,57px,110px)
+    @include positionabsolut(80px,none,none,170px)
 } 
 
 .cuchilloguests img {
     z-index: 3;
-    width: 29px;
-    @include positionabsolut(2380px,0px,0px,238px)
+    width: 24px;
+    @include positionabsolut(400px,0px,0px,220px)
 }
 
-.tenedorguests img {
+.tenedorguests { 
     z-index: 4;
-    width: 100px;
-    @include positionabsolut(2460px,0px,0px,150px)
+    width: 80px;
+    @include positionabsolut(500px,none,none,140px)
 }
 
 .plato2guests img{
     width: 50px;
-    @include positionabsolut(2165px,auto,57px,190px)
+    @include positionabsolut(175px,none,none,130px)
 }
 
 .quesoguests img {
     width: 48px;
-    @include positionabsolut(2150px,auto,57px,30px)
+    @include positionabsolut(100px,auto,57px,20px)
 }
 /* Contact */
+
+
+.contactofondo{
+  background: none;
+}
+
 
 .fondofomulario {
     height: 640px;
     display: inline-block;
+    position: relative;
     width: 100%;
     background-image: url("../../images/Contact/fondomobilecontact.png");
-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 .tituloformulario h1 {
     font-size: 50px;
-    @include positionabsolut(2570px,auto,57px,85px)
+    @include positionabsolut(50px,none,none,80px)
 }
 
 .quesocontact img {
-    width: 100px;
-    @include positionabsolut(2990px,auto,57px,-69px)
+    display: none;
 }
 
 .sobremesalogocontact img {
-    width: 100px;
-    transform: rotate(50deg);
-    @include positionabsolut(2670px,auto,57px,250px)
+   display: none;
 }
 
 .instagramlogofooter img{
     width: 25px;
-    @include positionabsolut(3153px,auto,57px,270px)
+    @include positionabsolut(580px,none,none,250px)
 }
 
 .facebooklogofooter img {
     width: 27px;
-    @include positionabsolut(3151px,auto,57px,304px)
+    @include positionabsolut(578px,none,none,287px)
 }
 
-.formulariomobile {
-     display: flex;
+#formulariocontact {
+display: flex;
 flex-direction: column;
 align-items: center;
-line-height: 12px;
-@include positionabsolut(2680px,68px,128px,52px)
+line-height: 8px;
+@include positionabsolut(175px,none,none,95px)
 }
 
 #inputnamemobile input{
@@ -1495,6 +1678,9 @@ line-height: 12px;
 }
 
 #botonsubmitmobile input {
+  display: flex;
+  align-self: center;
+  font-size: 15px;
   @include inputstyle(50px,25px,3px,20px)
     }
 

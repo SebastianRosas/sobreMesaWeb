@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/css/main.css">
     <link rel="icon" href="images/Favicon/Plato.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <title>Sobremesa</title>
 </head>
@@ -45,11 +46,11 @@
             </header>
 
         
-        <div id="swipeuplogo">
-            <img src="images/HomePage/swipeuplogo.png" alt="logoswipeup">
+        <div>
+            <img src="images/HomePage/swipeuplogo.png" alt="logoswipeup" class="swipeuplogo">
         </div>
 
-        <div id="SobremesaLogo" class="shakesobremesalogo">
+        <div class="SobremesaLogo">
             <img src="images/HomePage/Sobremesalogo.png" alt="LogoCentro">
         </div>
         <div id="PlatoConQueso" class="shakeplatoconqueso">
@@ -85,19 +86,18 @@
             <div class="aboutdescription">
                
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing <br>
-                        elit.Officiis neque repellat modi ratione <br>
-                        reprehenderit atque obcaecati unde esse quam soluta,<br>
-                        necessitatibus quo alias molestiae impedit doloribus <br>
-                        natus tempore voluptatum provident! <br>
-                    </p>
+                <p>
+                    We are a party that started at the end of 2018 in Berlin, <br>
+                    created by our two residents Sugar Free and Ethel. <br>
+                    We feelthe need to create a space in which energy and <br>
+                    friends flow. Grab a chair and join our table!
+                </p>
 
                
             </div>
 
-            <div id="CartelitoAbout" class="cartelitomovimiento">
-                <img src="images/About/Cartelito.png" alt="Cartelito???">
+            <div id="CartelitoAbout">
+                <img src="images/About/Cartelito.png" alt="Cartelito???" class="cartelitomovimiento">
             </div>
 
         </div>
@@ -133,28 +133,64 @@
 
         <h3 class="titulofotosparty">Party</h3>
 
-        <div id="fotosparty">
-            <img src="images/TheParty/Photos/party.jpg" alt="Photo1">
-            <img src="images/TheParty/Photos/Party1.jpg" alt="Photo2">
-            <img src="images/TheParty/Photos/party3.jpg" alt="Photo3">
-            <br>
-            <img src="images/TheParty/Photos/party4.jpg" alt="Photo4">
-            <img src="images/TheParty/Photos/party5.jpg" alt="Photo5">
-            <img src="images/TheParty/Photos/party2.jpg" alt="Photo6">
+        <div id="photos" >
+            <div id="photo-gallery">
+           
+             
+                <a href="images/TheParty/Photos/party.jpg"><img src="images/TheParty/Photos/party.jpg" alt="Photo1"></a>
+            
+                  <a href="images/TheParty/Photos/Party1.jpg"><img src="images/TheParty/Photos/Party1.jpg" alt="Photo2"></a></a>
+            
+                <a href="images/TheParty/Photos/party2.jpg"><img src="images/TheParty/Photos/party2.jpg" alt="Photo3"></a>
+          
+           
+                <a href="images/TheParty/Photos/party3.jpg"><img src="images/TheParty/Photos/party3.jpg" alt="Photo4"></a>
+                </a>
+           
+                <a href="images/TheParty/Photos/party4.jpg"><img src="images/TheParty/Photos/party4.jpg" alt="Photos5"></a>
+                </a>
+            
+                <a href="images/TheParty/Photos/party5.jpg"><img src="images/TheParty/Photos/party5.jpg" alt="Photos6"></a>
+                </a>
+            
         </div>
+          </div>
+
+        
 
         <!--Flyers-->
 
         <h3 class="tituloflyersparty">Flyers</h3>
-        <div id="flyersparty">
-            <img src="images/TheParty/Flyers/Flyer1.jpg" alt="Flyer1">
-            <img src="images/TheParty/Flyers/Flyer2.jpg" alt="Flyer2">
-            <img src="images/TheParty/Flyers/Flyer3.jpg" alt="Flyer3">
-            <br>
-            <img src="images/TheParty/Flyers/Flyer4.jpg" alt="Flyer4">
-            <img src="images/TheParty/Flyers/Flyer5.jpg" alt="Flyer5">
-            <img src="Images/TheParty/Flyers/Flyer6.jpg" alt="Flyer6">
+
+        <div id="Flyers" >
+            <div id="Flyers-gallery">
+           
+             
+                <a href="images/TheParty/Flyers/Flyer1.jpg"><img src="images/TheParty/Flyers/Flyer1.jpg"" alt="flyer1"></a>
+            
+                  <a href="images/TheParty/Flyers/Flyer2.jpg"><img src="images/TheParty/Flyers/Flyer2.jpg" alt="flyer2"></a></a>
+            
+                <a href="images/TheParty/Flyers/Flyer3.jpg"><img src="images/TheParty/Flyers/Flyer3.jpg" alt="flyer3"></a>
+          
+           
+                <a href="images/TheParty/Flyers/Flyer4.jpg"><img src="images/TheParty/Flyers/Flyer4.jpg" alt="flyer4"></a>
+                </a>
+           
+                <a href="images/TheParty/Flyers/Flyer5.jpg"><img src="images/TheParty/Flyers/Flyer5.jpg" alt="flyer5"></a>
+                </a>
+            
+                <a href="images/TheParty/Flyers/Flyer6.jpg"><img src="images/TheParty/Flyers/Flyer6.jpg" alt="flyer6"></a>
+                </a>
+            
         </div>
+          </div>
+
+
+
+        <!-- <div class="flyernextgig">
+                    <a href="images/TheParty/Flyers/Flyer6.jpg"><img src="images/TheParty/Flyers/Flyer6.jpg" alt=""></a>
+            </div> -->
+      
     </div>
     <!--Guests-->
     <div id="guestspage">
@@ -227,7 +263,7 @@
 
             <!--Formulario De Contacto-->
 
-            <div id="formulariocontact" class="formulariomobile">
+            <div id="formulariocontact" >
 
                 <form action="a">
 
