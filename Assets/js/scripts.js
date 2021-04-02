@@ -1,7 +1,7 @@
 
 window.onscroll = function() {    };
 
-var menumobile =  document.querySelector("#menumobile");
+let menumobile =  document.querySelector("#menumobile");
 
 window.onscroll = function() {  
     menumobile.className = "menumobile" 
@@ -20,8 +20,8 @@ function abrirMenu (){
  }
 
 
- var $overlay = $('<div id="overlay"></div>');
- var $image = $("<img>");
+ let $overlay = $('<div id="overlay"></div>');
+ let $image = $("<img>");
  
  //An image to overlay
  $overlay.append($image);
@@ -41,31 +41,19 @@ function abrirMenu (){
      $overlay.show();
    } );
  
-   $("#overlay2").click(function() {
-     $( "#overlay2" ).hide();
+   $("#overlay").click(function() {
+     $( "#overlay" ).hide();
    });
 
-   var $overlay2 = $('<div id="overlay"></div>');
- var $image2 = $("<img>");
- 
- //An image to overlay
- $overlay2.append($image2);
- 
- //Add overlay
- $("body").append($overlay2);
- 
    //click the image and a scaled version of the full size image will appear
    $("#Flyers-gallery a").click( function(event) {
      event.preventDefault();
      var imageLocation2 = $(this).attr("href");
  
      //update overlay with the image linked in the link
-     $image2.attr("src", imageLocation2);
+     $image.attr("src", imageLocation2);
  
      //show the overlay
-     $overlay2.show();
+     $overlay.show();
    } );
- 
-   $("#overlay2").click(function() {
-     $( "#overlay2" ).hide();
-   });
+     

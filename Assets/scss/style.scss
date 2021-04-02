@@ -1104,31 +1104,38 @@ left: 37vw;
 }
 
 .inputname input{
+ border-color: black;
  font-size: 1vw;
  @include inputstyle(26vw,1.5vw,3px,20px)
 }
 
 .inputapellido input{
+  border-color: black;
   font-size: 1vw;
   @include inputstyle(26vw,1.5vw,3px,20px)
 }
 
 .inputemail input {
+  border-color: black;
   font-size: 1vw;
   @include inputstyle(26vw,1.5vw,3px,20px)
 }
 
 .inputaffair input {
+  border-color: black;
   font-size: 1vw;
   @include inputstyle(26vw,1.5vw,3px,20px)
 }
 
 .textareacomments textarea {
+  border-color: black;
+  padding: 8px;
    font-size: 1vw;
    @include inputstyle(26vw,8vw,3px,20px)
 }
 
 .botonsubmit input {
+  border-color: black;
    font-size: 1vw;
    @include inputstyle(4vw,2vw,3px,20px)
    }
@@ -1159,6 +1166,11 @@ left: 37vw;
 
  @media only screen and (min-width: 0px) and (max-width: 640px) {
 
+body{
+  overflow-x: hidden;
+  margin: 0px;
+}
+
     /* Home Mobile */
 
 #logonavbar a {
@@ -1168,7 +1180,7 @@ left: 37vw;
 #homepage {
     
     flex-wrap: nowrap;
-    height: 640px;
+    height: 180.7vw;
     position: relative;
     display: inline-block;
     width: 100%;
@@ -1180,36 +1192,33 @@ left: 37vw;
 }
 
 #menudesplegable{
-  position: absolute;
   z-index: 50;
-  top: 0px;
-  right:0px ;
-  bottom: 0px;
-  left: 175px;
+  position: absolute;
+  left: 55vw;
   #botonmenumobile {
-    width: 90px;
+    width: 26vw;
     position: absolute;
-    top: 5px;
-    left: 55px;
+    top: 1.8vw;
+    left: 17vw;
   }
   ul li{
-    width: 70px;
-    height: 50px ;
+    width: 21vw;
+    height: 16vw ;
     background-color: salmon;
     list-style: none;
     -webkit-box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.17);
     -moz-box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.17);
     box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.17);
-    @include positionrelative (130px,0px,0px,-149px)
+    @include positionrelative (3vw,none,none,-42vw)
   }
   li{
-    padding: 15px;
-    padding-left: 25px;
+    padding: 4vw;
+    padding-left: 6vw;
     letter-spacing: 1px;
-    line-height: 28px;
+    line-height: 8vw;
     font-family: "DK LEMON", "DK LEMON GITHUB";
     list-style: none;
-    font-size: 25px;
+    font-size: 7vw;
     text-decoration: none;
   }
   a{
@@ -1217,8 +1226,8 @@ left: 37vw;
     text-decoration: none;
   }
   .logodesplegable{
-    width: 40px;
-    padding-left: 10px;
+    width: 13vw;
+    padding-left: 3vw;
   }
 }
 
@@ -1270,39 +1279,39 @@ display: none;
 
 .SobremesaLogo img{
   width: 73vw;
-  @include positionabsolut(290px,none,none,37px)
+  @include positionabsolut(88vw,none,none,14vw)
 }
 
 
 #PlatoConQueso img { 
-    width: 79px;
-    @include positionabsolut(183px,none,none,15px)
+    width: 23vw;
+    @include positionabsolut(57vw,none,none,7vw)
     
 }
 
 #PlatoTenedorAmrillo img {
-    width: 70px ;
-    @include positionabsolut(486px,none,none,237px)
+    width: 20vw ;
+    @include positionabsolut(136vw,none,none,70vw)
 }
 
 #Roto img {
-    width: 44px;
-    @include positionabsolut(450px,none,none,30px)
+    width: 13vw;
+    @include positionabsolut(128vw,none,none,8vw)
 }
 
 #Copa img {
-    width: 115px;
-    @include positionabsolut(414px,122px,0px,120px)
+    width: 30vw;
+    @include positionabsolut(119vw,none,none,33vw)
 }
 
 #Cuchillo img {
-    width: 35px;
-    @include positionabsolut(210px,36px,0px,280px)
+    width: 11vw;
+    @include positionabsolut(60vw,none,none,77vw)
 }
 
 #Tenedor img{
-    width: 76px;
-    @include positionabsolut(206px,47px,0px,220px)
+    width: 24vw;
+    @include positionabsolut(58vw,none,none,58vw)
 }
 
 #logonavbar {
@@ -1316,7 +1325,7 @@ display: none;
 /* About */
 
 .AboutFondo {
-    height: 640px;
+    height: 180.7vw;
     display: inline-block;
     position: relative;
     width: 100%;
@@ -1325,21 +1334,23 @@ display: none;
 }
 
 .tituloabout h1 {
-    font-size: 50px;
-    @include positionabsolut(60px,none,none,28px)
+  text-align: center;
+  width: 100%;
+    font-size: 13vw;
+    @include positionabsolut(16vw,none,none,0px)
 }
 
 .aboutdescription p {
-    font-size: 16px; 
+    font-size: 4.5vw; 
     justify-content: space-between;
-    line-height: 22px;
-    @include positionabsolut(450px,none,none,20px)
+    line-height: 6vw;
+    @include positionabsolut(120vw,none,none,8.5vw)
     }
 
 
 #CartelitoAbout img {
-    width: 303px;
-    @include positionabsolut(200px,none,none,17px)
+    width: 80vw;
+    @include positionabsolut(60vw,none,none,10.5vw)
 }
 
 .cartelitomovimiento{
@@ -1369,7 +1380,7 @@ display: none;
 /* The Party */
 
 #thepartypage {
-    height: 640px;
+    height: 180.7vw;
     display: inline-block;
     position: relative;
     width: 100%;
@@ -1379,17 +1390,17 @@ display: none;
 
 #photos {
   position: absolute;
-  top: 370px;
-  left: 10px;
+  top: 99vw;
+  left: 6.5vw;
   z-index: 1000;
   opacity: 100%;
 }
 
 #photos img {
-  width: 70px;
+  width: 19vw;
   float: left;
   display: block;
-  margin: 2px;
+  margin: 1vw;
   border-radius: 2px;
 }
 
@@ -1400,20 +1411,18 @@ display: none;
   width: 100%;
   height: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
   display: none;
   text-align: center;
 }
 
 #overlay img {
   margin: 35% auto 0;
-  width: 300px;
+  width: 100vw;
   border-radius: 2px;
 }
 
 #photos {
-  width: 200px
+  width: 50vw;
 }
 
 #photo-gallery {
@@ -1426,42 +1435,39 @@ display: none;
 
 #Flyers {
   position: absolute;
-  top: 160px;
-  left: 170px;
+  top: 42vw;
+  left: 52vw;
   z-index: 1000;
   opacity: 100%;
 }
 
 #Flyers img {
-  width: 70px;
+  width: 19vw;
   float: left;
   display: block;
-  margin: 2px;
+  margin: 1vw;
   border-radius: 2px;
 }
 
 
 #overlay2 {
-  z-index: 10001;
+  z-index: 10002;
   background: rgba(0,0,0, .8);
   width: 100%;
   height: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
   display: none;
   text-align: center;
 }
 
 #overlay2 img {
-  margin: 10% 
-  auto 0;
-  width: 550px;
-  border-radius: 5px;
+  margin: 35% auto 0;
+  width: 100vw;
+  border-radius: 2px;
 }
 
 #Flyers {
-  width: 200px;
+  width: 50vw;
 }
 
 #Flyers-gallery {
@@ -1472,19 +1478,21 @@ display: none;
 
 
 .TituloTheParty {
-    font-size: 45px;
-    @include positionabsolut(0px,none,none,100px)
+    font-size: 13vw;
+    text-align: center;
+    width: 100%;
+    @include positionabsolut(1vw,none,none,0px)
 }
 
 .copatheparty {
   z-index: 1;
-    width: 340px;
-    @include positionabsolut(100px,0px,auto,-135px)
+    width: 94vw;
+    @include positionabsolut(24vw,none,none,-33vw)
 }   
 
 .platosparty {
-    width: 290px;
-    @include positionabsolut(95px,none,none,18px)
+    width: 80vw;
+    @include positionabsolut(25vw,none,none,10vw)
 } 
 
 .cuchilloparty {
@@ -1497,117 +1505,119 @@ display: none;
 
 .platoesquinaparty {
   z-index: 2;
-    width: 240px;
-    @include positionrelative(450px,none,none,80px)
+    width: 70vw;
+    @include positionrelative(120vw,none,none,24vw)
 }
 
 .titulofotosparty {
-    font-size: 17px;
-    @include positionabsolut(330px,none,none,16px)
+    font-size: 5vw;
+    @include positionabsolut(88.5vw,none,none,29px)
 }
 
 .tituloflyersparty { 
-    font-size: 17px;
-    @include positionabsolut(372px,none,none,280px)
+    font-size: 5vw;
+    @include positionabsolut(101vw,none,none,82.5vw)
 }
 
 
 /* Guests */
 
 #guestspage {
-    height: 640px;
+    height: 180.7vw;
     display: inline-block;
     position: relative;
     width: 100%;
 }
 #gueststitulo {
     z-index: 2;
-    font-size: 23px;
-    @include positionabsolut(0px,none,none,10px)
+    font-size: 7vw;
+    @include positionabsolut(1vw,none,none,6vw)
 }
 
 .Botella img {
     z-index: 1;
-    width: 330px;
-    @include positionabsolut(258px,none,none,0px)
+    width: 99vw;
+    @include positionabsolut(70vw,none,none,none)
 }
 
 .ethel {
-    width: 60px;
-    @include positionabsolut(170px,none,none,16px)
+    width: 17vw;
+    @include positionabsolut(52vw,none,none,8vw)
 }
 
 .georgiooniani {
-    width: 60px;
-    @include positionabsolut(120px,none,none,90px)
+    width: 17vw;
+    @include positionabsolut(33vw,none,none,28vw)
 }
 
 .hugie {
-    width: 70px;
-    @include positionabsolut(340px,none,none,10px)
+  z-index: 42;
+    width: 19vw;
+    @include positionabsolut(95vw,none,none,7vw)
 }
 
 
 .mayell {
-    width: 62px;
-    @include positionabsolut(240px,none,none,90px)
+  z-index: 44;
+    width: 19vw;
+    @include positionabsolut(68vw,none,none,28vw)
 }
 
 .mrmurray {
-    width: 60px;
+    width: 19vw;
     transform: rotate(-30deg);
-    @include positionabsolut(210px,none,none,165px)
+    @include positionabsolut(58vw,none,none,50vw)
 }
 
 .oswaldo {
-    width: 70px;
-    @include positionabsolut(150px,none,none,220px)
+    width: 20vw;
+    @include positionabsolut(42vw,none,none,60vw)
 }
 
 .quest {
-    width: 60px;
-    @include positionabsolut(210px,none,none,260px)
+    width: 16vw;
+    @include positionabsolut(57vw,none,none,76vw)
 }
 
 .sugarfree {
-    width: 45px;
-    @include positionabsolut(90px,none,none,280px)
+    width: 17vw;
+    @include positionabsolut(20vw,none,none,77vw)
 }
 
 .timkern {
-    width: 50px;
-    @include positionabsolut(260px,none,none,10px)
+  z-index: 43;
+    width: 15vw;
+    @include positionabsolut(72vw,none,none,6vw)
 }
 
 .tzena {
-    width: 60px;
+    width: 17vw;
     transform: rotate(-20deg);
-    @include positionabsolut(80px,none,none,170px)
+    @include positionabsolut(21vw,none,none,50vw)
 } 
 
 .cuchilloguests img {
     z-index: 3;
-    width: 24px;
-    @include positionabsolut(400px,0px,0px,220px)
+    width: 8vw;
+    @include positionabsolut(115vw,none,none,66vw)
 }
 
 .tenedorguests { 
     z-index: 4;
-    width: 80px;
-    @include positionabsolut(500px,none,none,140px)
+    width: 25vw;
+    @include positionabsolut(145vw,none,none,45vw)
 }
 
 .plato2guests img{
-    width: 50px;
-    @include positionabsolut(175px,none,none,130px)
+    width: 14vw;
+    @include positionabsolut(50vw,none,none,35vw)
 }
 
 .quesoguests img {
-    width: 48px;
-    @include positionabsolut(100px,auto,57px,20px)
+    width: 16vw;
+    @include positionabsolut(29vw,none,none,7vw)
 }
 /* Contact */
-
 
 .contactofondo{
   background: none;
@@ -1615,7 +1625,7 @@ display: none;
 
 
 .fondofomulario {
-    height: 640px;
+    height: 180.7vw;
     display: inline-block;
     position: relative;
     width: 100%;
@@ -1626,8 +1636,9 @@ display: none;
 }
 
 .tituloformulario h1 {
-    font-size: 50px;
-    @include positionabsolut(50px,none,none,80px)
+  text-align: center;
+    font-size: 15vw;
+    @include positionabsolut(10vw,none,none,20vw)
 }
 
 .quesocontact img {
@@ -1639,69 +1650,82 @@ display: none;
 }
 
 .instagramlogofooter img{
-    width: 25px;
-    @include positionabsolut(580px,none,none,250px)
+    width: 8vw;
+    @include positionabsolut(168vw,none,none,70vw)
 }
 
 .facebooklogofooter img {
-    width: 27px;
-    @include positionabsolut(578px,none,none,287px)
+    width: 8.5vw;
+    @include positionabsolut(167.5vw,none,none,81vw)
 }
 
 #formulariocontact {
+
+  width: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
-line-height: 8px;
-@include positionabsolut(175px,none,none,95px)
+line-height: 3vw;
+@include positionabsolut(44vw,none,none,0px)
 }
 
 #inputnamemobile input{
-  @include inputstyle(150px,15px,3px,20px)
+  border-color: black;
+  font-size: 4vw;
+  @include inputstyle(44vw,5vw,3px,20px)
 }
 
 #inputapellidomobile input{
-  @include inputstyle(150px,15px,3px,20px)
+  border-color: black;
+  font-size: 4vw;
+  @include inputstyle(44vw,5vw,3px,20px)
 }
 
 #inputemailmobile input {
-  @include inputstyle(150px,15px,3px,20px)
+  border-color: black;
+  font-size: 4vw;
+  @include inputstyle(44vw,5vw,3px,20px)
 }
 
 #inputaffairmobile input {
-  @include inputstyle(150px,15px,3px,20px)
+  border-color: black;
+  font-size: 4vw;
+  @include inputstyle(44vw,5vw,3px,20px)
 
 }
 
 #textareacommentsmobile textarea {
-  @include inputstyle(150px,50px,3px,20px)
+  border-color: black;
+  padding: 5px;
+  font-size: 4vw;
+  line-height: 4vw;
+  @include inputstyle(44vw,16vw,3px,20px)
 }
 
 #botonsubmitmobile input {
-  display: flex;
-  align-self: center;
-  font-size: 15px;
-  @include inputstyle(50px,25px,3px,20px)
+  border-color: black;
+  font-size: 4.5vw;
+  @include inputstyle(fit-content,7vw,3px,20px)
     }
 
 #labelnamemobile label {
-    font-size: 15px;
+    font-size: 5vw;
 }
 
 #labelapellidomobile label {
-    font-size: 15px;
+    font-size: 5vw;
 }
 
 #labelemailmobile {
-    font-size: 15px;
+    font-size: 5vw;
 }
 
 #labelaffairmobile label {
-    font-size: 15px;
+    font-size: 5vw;
 }
 
 #labelcommentsmobile label {
-    font-size: 15px;
+    font-size: 5vw;
 }
 
 }
